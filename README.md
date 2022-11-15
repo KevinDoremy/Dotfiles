@@ -24,11 +24,17 @@ Install all the packages
 choco install packages.config -y
 ```
 **WinGet**
-```
+```powershell
 winget export wingetAllPackage.json
 ```
-```
+```powershell
 winget import wingetAllPackage.json
+```
+```powershell
+Get-AppxPackage -AllUsers | Select Name, PackageFullName, InstallLocation | Format-Table -AutoSize
+```
+```powershell
+Get-Packag
 ```
 
 
@@ -200,10 +206,9 @@ Logi Options+                          Logitech.OptionsPlus                   1.
 Node.js                                OpenJS.NodeJS                          18.9.0              19.1.0         winget
 Windows Subsystem for Linux Update     {8BC9BA1B-F6F3-471D-8773-5283F0C52B84} 5.10.60.1
 Assistant de téléchargement            {93154A3C-9BB7-49D7-A571-4EB6373FA602} 6.71.0
-ScreenToGif                            NickeManarin.ScreenToGif               2.37.1                             winget
-**    C:/Dev   01:24:50  羽4.773s**
-🔹  Get-Package
 
+
+**Get-Package**
 
 | Name                            | Version          | Source                           | ProviderName  |
 |---------------------------------|------------------|----------------------------------|---------------|
@@ -214,8 +219,6 @@ ScreenToGif                            NickeManarin.ScreenToGif               2.
 | Name                                         | PackageFullName                                                                         | InstallLocation                                                                                          |
 |----------------------------------------------|-----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
 |                                              |                                                                                         |                                                                                                          |
-| 1527c705-839a-4832-9118-54d4Bd6a0c89         | 1527c705-839a-4832-9118-54d4Bd6a0c89_10.0.19041.1023_neutral_neutral_cw5n1h2txyewy      | C:\Windows\SystemApps\Microsoft.Windows.FilePicker_cw5n1h2txyewy                                         |
-| 1527c705-839a-4832-9118-54d4Bd6a0c89         | 1527c705-839a-4832-9118-54d4Bd6a0c89_10.0.19041.423_neutral_neutral_cw5n1h2txyewy       | C:\Windows\SystemApps\Microsoft.Windows.FilePicker_cw5n1h2txyewy                                         |
 | 21676OptimiliaStudios.ReadAloud              | 21676OptimiliaStudios.ReadAloud_2.1.40.0_x64__k42naep6bwmrc                             | C:\Program Files\WindowsApps\21676OptimiliaStudios.ReadAloud_2.1.40.0_x64__k42naep6bwmrc                 |
 | 4505Fortemedia.FMAPOControl                  | 4505Fortemedia.FMAPOControl_1.0.38.0_x64__4pejv7q2gmsnr                                 | C:\Program Files\WindowsApps\4505Fortemedia.FMAPOControl_1.0.38.0_x64__4pejv7q2gmsnr                     |
 | 45273LiamForsyth.PawsforTrello               | 45273LiamForsyth.PawsforTrello_2.13.8.0_x64__7pb5ddty8z1pa                              | C:\Program Files\WindowsApps\45273LiamForsyth.PawsforTrello_2.13.8.0_x64__7pb5ddty8z1pa                  |
@@ -229,12 +232,6 @@ ScreenToGif                            NickeManarin.ScreenToGif               2.
 | DolbyLaboratories.DolbyAtmosSpeakerSystem    | DolbyLaboratories.DolbyAtmosSpeakerSystem_3.20800.804.0_x64__rz1tebttyb220              | C:\Program Files\WindowsApps\DolbyLaboratories.DolbyAtmosSpeakerSystem_3.20800.804.0_x64__rz1tebttyb220  |
 | DolbyLaboratories.DolbyVisionHDR             | DolbyLaboratories.DolbyVisionHDR_2.1.5965.0_x64__rz1tebttyb220                          | C:\Program Files\WindowsApps\DolbyLaboratories.DolbyVisionHDR_2.1.5965.0_x64__rz1tebttyb220              |
 | Drawboard.DrawboardPDF                       | DRAWBOARD.DRAWBOARDPDF_6.27.2.0_x64__gqbn7fs4pywxm                                      | C:\Program Files\WindowsApps\DRAWBOARD.DRAWBOARDPDF_6.27.2.0_x64__gqbn7fs4pywxm                          |
-| E046963F.LenovoCompanion                     | E046963F.LenovoCompanion_10.2208.12.0_x64__k1h2ywk1493x8                                | C:\Program Files\WindowsApps\E046963F.LenovoCompanion_10.2208.12.0_x64__k1h2ywk1493x8                    |
-| E0469640.LenovoUtility                       | E0469640.LenovoUtility_4.2.54.0_x64__5grkq8ppsgwt4                                      | C:\Program Files\WindowsApps\E0469640.LenovoUtility_4.2.54.0_x64__5grkq8ppsgwt4                          |
-| E2A4F912-2574-4A75-9BB0-0D023378592B         | E2A4F912-2574-4A75-9BB0-0D023378592B_10.0.19041.1023_neutral_neutral_cw5n1h2txyewy      | C:\Windows\SystemApps\Microsoft.Windows.AppResolverUX_cw5n1h2txyewy                                      |
-| E2A4F912-2574-4A75-9BB0-0D023378592B         | E2A4F912-2574-4A75-9BB0-0D023378592B_10.0.19041.423_neutral_neutral_cw5n1h2txyewy       | C:\Windows\SystemApps\Microsoft.Windows.AppResolverUX_cw5n1h2txyewy                                      |
-| F46D4000-FD22-4DB4-AC8E-4E1DDDE828FE         | F46D4000-FD22-4DB4-AC8E-4E1DDDE828FE_10.0.19041.1023_neutral_neutral_cw5n1h2txyewy      | C:\Windows\SystemApps\Microsoft.Windows.AddSuggestedFoldersToLibraryDialog_cw5n1h2txyewy                 |
-| F46D4000-FD22-4DB4-AC8E-4E1DDDE828FE         | F46D4000-FD22-4DB4-AC8E-4E1DDDE828FE_10.0.19041.423_neutral_neutral_cw5n1h2txyewy       | C:\Windows\SystemApps\Microsoft.Windows.AddSuggestedFoldersToLibraryDialog_cw5n1h2txyewy                 |
 | Microsoft.549981C3F5F10                      | Microsoft.549981C3F5F10_4.2204.13303.0_x64__8wekyb3d8bbwe                               | C:\Program Files\WindowsApps\Microsoft.549981C3F5F10_4.2204.13303.0_x64__8wekyb3d8bbwe                   |
 | Microsoft.AAD.BrokerPlugin                   | Microsoft.AAD.BrokerPlugin_1000.19041.1023.0_neutral_neutral_cw5n1h2txyewy              | C:\Windows\SystemApps\Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy                                           |
 | Microsoft.AV1VideoExtension                  | Microsoft.AV1VideoExtension_1.1.52074.0_x64__8wekyb3d8bbwe                              | C:\Program Files\WindowsApps\Microsoft.AV1VideoExtension_1.1.52074.0_x64__8wekyb3d8bbwe                  |
@@ -263,27 +260,6 @@ ScreenToGif                            NickeManarin.ScreenToGif               2.
 | Microsoft.MicrosoftSolitaireCollection       | Microsoft.MicrosoftSolitaireCollection_4.14.9130.0_x64__8wekyb3d8bbwe                   | C:\Program Files\WindowsApps\Microsoft.MicrosoftSolitaireCollection_4.14.9130.0_x64__8wekyb3d8bbwe       |
 | Microsoft.MicrosoftStickyNotes               | Microsoft.MicrosoftStickyNotes_4.5.7.0_x64__8wekyb3d8bbwe                               | C:\Program Files\WindowsApps\Microsoft.MicrosoftStickyNotes_4.5.7.0_x64__8wekyb3d8bbwe                   |
 | Microsoft.Midi.GmDls                         | Microsoft.Midi.GmDls_1.0.1.0_neutral__8wekyb3d8bbwe                                     | C:\Program Files\WindowsApps\Microsoft.Midi.GmDls_1.0.1.0_neutral__8wekyb3d8bbwe                         |
-| Microsoft.MixedReality.Portal                | Microsoft.MixedReality.Portal_2000.21051.1282.0_x64__8wekyb3d8bbwe                      | C:\Program Files\WindowsApps\Microsoft.MixedReality.Portal_2000.21051.1282.0_x64__8wekyb3d8bbwe          |
-| Microsoft.NET.Native.Framework.1.3           | Microsoft.NET.Native.Framework.1.3_1.3.24211.0_x64__8wekyb3d8bbwe                       | C:\Program Files\WindowsApps\Microsoft.NET.Native.Framework.1.3_1.3.24211.0_x64__8wekyb3d8bbwe           |
-| Microsoft.NET.Native.Framework.1.3           | Microsoft.NET.Native.Framework.1.3_1.3.24211.0_x86__8wekyb3d8bbwe                       | C:\Program Files\WindowsApps\Microsoft.NET.Native.Framework.1.3_1.3.24211.0_x86__8wekyb3d8bbwe           |
-| Microsoft.NET.Native.Framework.1.7           | Microsoft.NET.Native.Framework.1.7_1.7.27413.0_x64__8wekyb3d8bbwe                       | C:\Program Files\WindowsApps\Microsoft.NET.Native.Framework.1.7_1.7.27413.0_x64__8wekyb3d8bbwe           |
-| Microsoft.NET.Native.Framework.1.7           | Microsoft.NET.Native.Framework.1.7_1.7.27413.0_x86__8wekyb3d8bbwe                       | C:\Program Files\WindowsApps\Microsoft.NET.Native.Framework.1.7_1.7.27413.0_x86__8wekyb3d8bbwe           |
-| Microsoft.NET.Native.Framework.2.0           | Microsoft.NET.Native.Framework.2.0_2.0.27427.0_x64__8wekyb3d8bbwe                       | C:\Program Files\WindowsApps\Microsoft.NET.Native.Framework.2.0_2.0.27427.0_x64__8wekyb3d8bbwe           |
-| Microsoft.NET.Native.Framework.2.0           | Microsoft.NET.Native.Framework.2.0_2.0.27427.0_x86__8wekyb3d8bbwe                       | C:\Program Files\WindowsApps\Microsoft.NET.Native.Framework.2.0_2.0.27427.0_x86__8wekyb3d8bbwe           |
-| Microsoft.NET.Native.Framework.2.1           | Microsoft.NET.Native.Framework.2.1_2.1.27427.0_x64__8wekyb3d8bbwe                       | C:\Program Files\WindowsApps\Microsoft.NET.Native.Framework.2.1_2.1.27427.0_x64__8wekyb3d8bbwe           |
-| Microsoft.NET.Native.Framework.2.1           | Microsoft.NET.Native.Framework.2.1_2.1.27427.0_x86__8wekyb3d8bbwe                       | C:\Program Files\WindowsApps\Microsoft.NET.Native.Framework.2.1_2.1.27427.0_x86__8wekyb3d8bbwe           |
-| Microsoft.NET.Native.Framework.2.2           | Microsoft.NET.Native.Framework.2.2_2.2.29512.0_x64__8wekyb3d8bbwe                       | C:\Program Files\WindowsApps\Microsoft.NET.Native.Framework.2.2_2.2.29512.0_x64__8wekyb3d8bbwe           |
-| Microsoft.NET.Native.Framework.2.2           | Microsoft.NET.Native.Framework.2.2_2.2.29512.0_x86__8wekyb3d8bbwe                       | C:\Program Files\WindowsApps\Microsoft.NET.Native.Framework.2.2_2.2.29512.0_x86__8wekyb3d8bbwe           |
-| Microsoft.NET.Native.Runtime.1.4             | Microsoft.NET.Native.Runtime.1.4_1.4.24201.0_x64__8wekyb3d8bbwe                         | C:\Program Files\WindowsApps\Microsoft.NET.Native.Runtime.1.4_1.4.24201.0_x64__8wekyb3d8bbwe             |
-| Microsoft.NET.Native.Runtime.1.4             | Microsoft.NET.Native.Runtime.1.4_1.4.24201.0_x86__8wekyb3d8bbwe                         | C:\Program Files\WindowsApps\Microsoft.NET.Native.Runtime.1.4_1.4.24201.0_x86__8wekyb3d8bbwe             |
-| Microsoft.NET.Native.Runtime.1.7             | Microsoft.NET.Native.Runtime.1.7_1.7.27422.0_x64__8wekyb3d8bbwe                         | C:\Program Files\WindowsApps\Microsoft.NET.Native.Runtime.1.7_1.7.27422.0_x64__8wekyb3d8bbwe             |
-| Microsoft.NET.Native.Runtime.1.7             | Microsoft.NET.Native.Runtime.1.7_1.7.27422.0_x86__8wekyb3d8bbwe                         | C:\Program Files\WindowsApps\Microsoft.NET.Native.Runtime.1.7_1.7.27422.0_x86__8wekyb3d8bbwe             |
-| Microsoft.NET.Native.Runtime.2.0             | Microsoft.NET.Native.Runtime.2.0_2.0.25709.0_x64__8wekyb3d8bbwe                         | C:\Program Files\WindowsApps\Microsoft.NET.Native.Runtime.2.0_2.0.25709.0_x64__8wekyb3d8bbwe             |
-| Microsoft.NET.Native.Runtime.2.0             | Microsoft.NET.Native.Runtime.2.0_2.0.25709.0_x86__8wekyb3d8bbwe                         | C:\Program Files\WindowsApps\Microsoft.NET.Native.Runtime.2.0_2.0.25709.0_x86__8wekyb3d8bbwe             |
-| Microsoft.NET.Native.Runtime.2.1             | Microsoft.NET.Native.Runtime.2.1_2.1.26424.0_x64__8wekyb3d8bbwe                         | C:\Program Files\WindowsApps\Microsoft.NET.Native.Runtime.2.1_2.1.26424.0_x64__8wekyb3d8bbwe             |
-| Microsoft.NET.Native.Runtime.2.1             | Microsoft.NET.Native.Runtime.2.1_2.1.26424.0_x86__8wekyb3d8bbwe                         | C:\Program Files\WindowsApps\Microsoft.NET.Native.Runtime.2.1_2.1.26424.0_x86__8wekyb3d8bbwe             |
-| Microsoft.NET.Native.Runtime.2.2             | Microsoft.NET.Native.Runtime.2.2_2.2.28604.0_x64__8wekyb3d8bbwe                         | C:\Program Files\WindowsApps\Microsoft.NET.Native.Runtime.2.2_2.2.28604.0_x64__8wekyb3d8bbwe             |
-| Microsoft.NET.Native.Runtime.2.2             | Microsoft.NET.Native.Runtime.2.2_2.2.28604.0_x86__8wekyb3d8bbwe                         | C:\Program Files\WindowsApps\Microsoft.NET.Native.Runtime.2.2_2.2.28604.0_x86__8wekyb3d8bbwe             |
 | Microsoft.Office.OneNote                     | Microsoft.Office.OneNote_16001.14326.21146.0_x64__8wekyb3d8bbwe                         | C:\Program Files\WindowsApps\Microsoft.Office.OneNote_16001.14326.21146.0_x64__8wekyb3d8bbwe             |
 | Microsoft.People                             | Microsoft.People_10.2105.4.0_x64__8wekyb3d8bbwe                                         | C:\Program Files\WindowsApps\Microsoft.People_10.2105.4.0_x64__8wekyb3d8bbwe                             |
 | Microsoft.PowerShell                         | Microsoft.PowerShell_7.3.0.0_x64__8wekyb3d8bbwe                                         | C:\Program Files\WindowsApps\Microsoft.PowerShell_7.3.0.0_x64__8wekyb3d8bbwe                             |
@@ -293,28 +269,6 @@ ScreenToGif                            NickeManarin.ScreenToGif               2.
 | Microsoft.SkypeApp                           | Microsoft.SkypeApp_15.90.3407.0_x86__kzf8qxf38zg5c                                      | C:\Program Files\WindowsApps\Microsoft.SkypeApp_15.90.3407.0_x86__kzf8qxf38zg5c                          |
 | Microsoft.StorePurchaseApp                   | Microsoft.StorePurchaseApp_12207.44.6.0_x64__8wekyb3d8bbwe                              | C:\Program Files\WindowsApps\Microsoft.StorePurchaseApp_12207.44.6.0_x64__8wekyb3d8bbwe                  |
 | Microsoft.Todos                              | Microsoft.Todos_2.83.53132.0_x64__8wekyb3d8bbwe                                         | C:\Program Files\WindowsApps\Microsoft.Todos_2.83.53132.0_x64__8wekyb3d8bbwe                             |
-| Microsoft.UI.Xaml.2.0                        | Microsoft.UI.Xaml.2.0_2.1810.18004.0_x64__8wekyb3d8bbwe                                 | C:\Program Files\WindowsApps\Microsoft.UI.Xaml.2.0_2.1810.18004.0_x64__8wekyb3d8bbwe                     |
-| Microsoft.UI.Xaml.2.0                        | Microsoft.UI.Xaml.2.0_2.1810.18004.0_x86__8wekyb3d8bbwe                                 | C:\Program Files\WindowsApps\Microsoft.UI.Xaml.2.0_2.1810.18004.0_x86__8wekyb3d8bbwe                     |
-| Microsoft.UI.Xaml.2.1                        | Microsoft.UI.Xaml.2.1_2.11906.6001.0_x64__8wekyb3d8bbwe                                 | C:\Program Files\WindowsApps\Microsoft.UI.Xaml.2.1_2.11906.6001.0_x64__8wekyb3d8bbwe                     |
-| Microsoft.UI.Xaml.2.1                        | Microsoft.UI.Xaml.2.1_2.11906.6001.0_x86__8wekyb3d8bbwe                                 | C:\Program Files\WindowsApps\Microsoft.UI.Xaml.2.1_2.11906.6001.0_x86__8wekyb3d8bbwe                     |
-| Microsoft.UI.Xaml.2.3                        | Microsoft.UI.Xaml.2.3_2.32002.13001.0_x64__8wekyb3d8bbwe                                | C:\Program Files\WindowsApps\Microsoft.UI.Xaml.2.3_2.32002.13001.0_x64__8wekyb3d8bbwe                    |
-| Microsoft.UI.Xaml.2.3                        | Microsoft.UI.Xaml.2.3_2.32002.13001.0_x86__8wekyb3d8bbwe                                | C:\Program Files\WindowsApps\Microsoft.UI.Xaml.2.3_2.32002.13001.0_x86__8wekyb3d8bbwe                    |
-| Microsoft.UI.Xaml.2.4                        | Microsoft.UI.Xaml.2.4_2.42007.9001.0_x64__8wekyb3d8bbwe                                 | C:\Program Files\WindowsApps\Microsoft.UI.Xaml.2.4_2.42007.9001.0_x64__8wekyb3d8bbwe                     |
-| Microsoft.UI.Xaml.2.4                        | Microsoft.UI.Xaml.2.4_2.42007.9001.0_x86__8wekyb3d8bbwe                                 | C:\Program Files\WindowsApps\Microsoft.UI.Xaml.2.4_2.42007.9001.0_x86__8wekyb3d8bbwe                     |
-| Microsoft.UI.Xaml.2.6                        | Microsoft.UI.Xaml.2.6_2.62112.3002.0_x64__8wekyb3d8bbwe                                 | C:\Program Files\WindowsApps\Microsoft.UI.Xaml.2.6_2.62112.3002.0_x64__8wekyb3d8bbwe                     |
-| Microsoft.UI.Xaml.2.6                        | Microsoft.UI.Xaml.2.6_2.62112.3002.0_x86__8wekyb3d8bbwe                                 | C:\Program Files\WindowsApps\Microsoft.UI.Xaml.2.6_2.62112.3002.0_x86__8wekyb3d8bbwe                     |
-| Microsoft.UI.Xaml.2.7                        | Microsoft.UI.Xaml.2.7_7.2207.21001.0_x64__8wekyb3d8bbwe                                 | C:\Program Files\WindowsApps\Microsoft.UI.Xaml.2.7_7.2207.21001.0_x64__8wekyb3d8bbwe                     |
-| Microsoft.UI.Xaml.2.7                        | Microsoft.UI.Xaml.2.7_7.2208.15002.0_x64__8wekyb3d8bbwe                                 | C:\Program Files\WindowsApps\Microsoft.UI.Xaml.2.7_7.2208.15002.0_x64__8wekyb3d8bbwe                     |
-| Microsoft.UI.Xaml.2.7                        | Microsoft.UI.Xaml.2.7_7.2208.15002.0_x86__8wekyb3d8bbwe                                 | C:\Program Files\WindowsApps\Microsoft.UI.Xaml.2.7_7.2208.15002.0_x86__8wekyb3d8bbwe                     |
-| Microsoft.UI.Xaml.2.8                        | Microsoft.UI.Xaml.2.8_8.2208.12001.0_x64__8wekyb3d8bbwe                                 | C:\Program Files\WindowsApps\Microsoft.UI.Xaml.2.8_8.2208.12001.0_x64__8wekyb3d8bbwe                     |
-| Microsoft.UI.Xaml.2.8                        | Microsoft.UI.Xaml.2.8_8.2208.12001.0_x86__8wekyb3d8bbwe                                 | C:\Program Files\WindowsApps\Microsoft.UI.Xaml.2.8_8.2208.12001.0_x86__8wekyb3d8bbwe                     |
-| Microsoft.VCLibs.140.00                      | Microsoft.VCLibs.140.00_14.0.29231.0_x64__8wekyb3d8bbwe                                 | C:\Program Files\WindowsApps\Microsoft.VCLibs.140.00_14.0.29231.0_x64__8wekyb3d8bbwe                     |
-| Microsoft.VCLibs.140.00                      | Microsoft.VCLibs.140.00_14.0.30035.0_x64__8wekyb3d8bbwe                                 | C:\Program Files\WindowsApps\Microsoft.VCLibs.140.00_14.0.30035.0_x64__8wekyb3d8bbwe                     |
-| Microsoft.VCLibs.140.00                      | Microsoft.VCLibs.140.00_14.0.30035.0_x86__8wekyb3d8bbwe                                 | C:\Program Files\WindowsApps\Microsoft.VCLibs.140.00_14.0.30035.0_x86__8wekyb3d8bbwe                     |
-| Microsoft.VCLibs.140.00                      | Microsoft.VCLibs.140.00_14.0.30704.0_x64__8wekyb3d8bbwe                                 | C:\Program Files\WindowsApps\Microsoft.VCLibs.140.00_14.0.30704.0_x64__8wekyb3d8bbwe                     |
-| Microsoft.VCLibs.140.00                      | Microsoft.VCLibs.140.00_14.0.30704.0_x86__8wekyb3d8bbwe                                 | C:\Program Files\WindowsApps\Microsoft.VCLibs.140.00_14.0.30704.0_x86__8wekyb3d8bbwe                     |
-| Microsoft.VCLibs.140.00.UWPDesktop           | Microsoft.VCLibs.140.00.UWPDesktop_14.0.30704.0_x64__8wekyb3d8bbwe                      | C:\Program Files\WindowsApps\Microsoft.VCLibs.140.00.UWPDesktop_14.0.30704.0_x64__8wekyb3d8bbwe          |
-| Microsoft.VCLibs.140.00.UWPDesktop           | Microsoft.VCLibs.140.00.UWPDesktop_14.0.30704.0_x86__8wekyb3d8bbwe                      | C:\Program Files\WindowsApps\Microsoft.VCLibs.140.00.UWPDesktop_14.0.30704.0_x86__8wekyb3d8bbwe          |
 | Microsoft.VP9VideoExtensions                 | Microsoft.VP9VideoExtensions_1.0.52781.0_x64__8wekyb3d8bbwe                             | C:\Program Files\WindowsApps\Microsoft.VP9VideoExtensions_1.0.52781.0_x64__8wekyb3d8bbwe                 |
 | Microsoft.Wallet                             | Microsoft.Wallet_2.4.18324.0_x64__8wekyb3d8bbwe                                         | C:\Program Files\WindowsApps\Microsoft.Wallet_2.4.18324.0_x64__8wekyb3d8bbwe                             |
 | Microsoft.WebMediaExtensions                 | Microsoft.WebMediaExtensions_1.0.42192.0_x64__8wekyb3d8bbwe                             | C:\Program Files\WindowsApps\Microsoft.WebMediaExtensions_1.0.42192.0_x64__8wekyb3d8bbwe                 |
@@ -375,10 +329,6 @@ ScreenToGif                            NickeManarin.ScreenToGif               2.
 | Windows.CBSPreview                           | Windows.CBSPreview_10.0.19041.1023_neutral_neutral_cw5n1h2txyewy                        | C:\Windows\SystemApps\Windows.CBSPreview_cw5n1h2txyewy                                                   |
 | Windows.CBSPreview                           | Windows.CBSPreview_10.0.19041.423_neutral_neutral_cw5n1h2txyewy                         | C:\Windows\SystemApps\Windows.CBSPreview_cw5n1h2txyewy                                                   |
 | Windows.PrintDialog                          | Windows.PrintDialog_6.2.1.0_neutral_neutral_cw5n1h2txyewy                               | C:\Windows\PrintDialog                                                                                   |
-| c5e2524a-ea46-4f67-841f-6a9465d9d515         | c5e2524a-ea46-4f67-841f-6a9465d9d515_10.0.19041.1023_neutral_neutral_cw5n1h2txyewy      | C:\Windows\SystemApps\Microsoft.Windows.FileExplorer_cw5n1h2txyewy                                       |
-| c5e2524a-ea46-4f67-841f-6a9465d9d515         | c5e2524a-ea46-4f67-841f-6a9465d9d515_10.0.19041.1949_neutral_neutral_cw5n1h2txyewy      | C:\Windows\SystemApps\Microsoft.Windows.FileExplorer_cw5n1h2txyewy                                       |
-| microsoft.windowscommunicationsapps          | microsoft.windowscommunicationsapps_16005.14326.20970.0_x64__8wekyb3d8bbwe              | C:\Program Files\WindowsApps\microsoft.windowscommunicationsapps_16005.14326.20970.0_x64__8wekyb3d8bbwe  |
-| windows.immersivecontrolpanel                | windows.immersivecontrolpanel_10.0.2.1000_neutral_neutral_cw5n1h2txyewy                 | C:\Windows\ImmersiveControlPanel                                                                         |
 
 ### Documentation   
 
