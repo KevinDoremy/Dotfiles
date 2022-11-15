@@ -101,6 +101,19 @@ vscode-insiders 1.72.0.20220916
 vscode-insiders.install 1.72.0.20220916
 zoomit 6.01
 **46 packages installed.**
+
+**Get-InstalledModule**
+Version    Name                                Repository           Description
+-------    ----                                ----------           -----------
+1.4.2      LSUClient                           PSGallery            Orchestrate driver, BIOS/UEFI and firmware updates for Lenovo computers 👨‍💻
+1.1.0      posh-git                            PSGallery            Provides prompt with Git status summary information and tab completion for Git commands, parameters, remotes and branch names.
+2.2.6      PSReadLine                          PSGallery            Great command line editing in the PowerShell console host
+0.10.0     Terminal-Icons                      PSGallery            PowerShell module to add file icons to terminal based on file extension
+1.4.7      PackageManagement                   PSGallery            PackageManagement (a.k.a. OneGet) is a new way to discover and install software packages from around the web....
+
+
+
+
 **🔹  winget list**
 Nom                                    ID                                     Version             Disponible     Source
 Visual Studio Community 2019           Microsoft.VisualStudio.2019.Community  16.11.13            16.11.21       winget
