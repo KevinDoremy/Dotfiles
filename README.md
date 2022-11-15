@@ -13,6 +13,14 @@ New-Item -ItemType SymbolicLink -Path C:\Users\Kevin\Documents\WindowsPowerShell
 ```
 
 **Chocolatey**
+install chocolatey
+```powershell
+Set-ExecutionPolicy AllSigned
+```
+```powershell
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+```
+
 Create a file with all the packages you want to install
 ```powershell
 $packageXml = ''
