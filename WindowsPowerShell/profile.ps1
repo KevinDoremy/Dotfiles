@@ -26,6 +26,9 @@ if ($host.Name -eq 'ConsoleHost')
     Import-Module PSReadLine
 }
 function Set-GitCommit { & git commit -m $args }
+function .. { set-location .. }
+function ... { set-location ../.. }
+function .... { set-location ../../.. }
 function Set-GitPush { & git push }
 function Set-GitPull { & git pull }
 function Set-GitAdd { & git add $args }
