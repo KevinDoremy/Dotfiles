@@ -315,10 +315,10 @@ ScreenToGif                            NickeManarin.ScreenToGif               2.
 | Microsoft Project - en-us       | 16.0.15726.20174 |                                  | Programs      |
 | QEMU                            | 6.2.94           |                                  | Programs      |
 | VLC media player                | 3.0.17.4         |                                  | Programs      |
+| Google Calendar                 | 1.0              |                                  | Programs      |
 | Google Drive                    | 65.0.2.0         |                                  | Programs      |
 | Logi Options+                   | 1.26.5989        |                                  | Programs      |
 | TasksBoard                      | 1.0              |                                  | Programs      |
-| Google Calendar                 | 1.0              |                                  | Programs      |
 | Discord                         | 1.0.9007         |                                  | Programs      |
 | LogiOptionsPlusExcelAddin       | 1.26.5989.0      |                                  | Programs      |
 | Miniconda3 py39_4.12.0 (Pyt...  | py39_4.12.0      |                                  | Programs      |
