@@ -724,3 +724,37 @@ Set-PSReadLineKeyHandler -Key Ctrl+Shift+t `
 (& "C:\Users\Kevin\miniconda3\Scripts\conda.exe" "shell.powershell" "hook") | Out-String | Invoke-Expression
 #endregion
 
+if ($PSVersionTable.PSVersion.Major -lt 5.0) {
+    exit
+}
+elseif (($PSVersionTable.PSVersion.Major -eq 5) -and ((Get-PackageProvider -Name NuGet -ErrorAction SilentlyContinue).Count -eq 0)) {
+    Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
+    Import-PackageProvider -Name NuGet
+}
+
+function No-Module($module) {
+    (Get-InstalledModule $module -ErrorAction SilentlyContinue).Count -eq 0 
+}
+
+if (No-Module PackageManagement) {
+    Install-Module -Name PackageManagement -SkipPublisherCheck -Force -AllowClobber
+}
+
+if (No-Module posh-git) {
+    if ($PSVersionTable.PSVersion.Major -ge 6.0) {
+        Install-Module -Name posh-git -AllowPrerelease -Scope AllUsers -Force
+    }
+    else {
+        Install-Module -Name posh-git -Scope AllUsers -Force
+    }
+}
+
+
+if (No-Module PSReadLine) {
+    if ($PSVersionTable.PSVersion.Major -ge 6.0) {
+        Install-Module -Name PSReadLine -AllowPrerelease -Scope AllUsers -Force -SkipPublisherCheck
+    }
+    else {
+        Install-Module -Name PSReadLine -Scope AllUsers -Force -SkipPublisherCheck
+    }
+}
