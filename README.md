@@ -47,7 +47,11 @@ Get-Package
 If doesnt work 
 ```powershell
 Import-Module posh-git
+```
+```powershell
 Import-Module oh-my-posh
+```
+```powershell
 Import-Module PSReadLine
 ```
 
