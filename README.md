@@ -339,7 +339,6 @@ ScreenToGif                            NickeManarin.ScreenToGif               2.
 | Terminal-Icons                  | 0.10.0           | https://www.powershellgallery... | PowerShellGet |
 | PackageManagement               | 1.4.7            | https://www.powershellgallery... | PowerShellGet |
 | PSReadLine                      | 2.2.6            | https://www.powershellgallery... | PowerShellGet |
-| LSUClient                       | 1.4.2            | https://www.powershellgallery... | PowerShellGet |
 
 
 ### Documentation   
