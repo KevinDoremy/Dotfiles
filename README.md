@@ -57,43 +57,20 @@ choco install zoom
 7zip.commandline 16.02.0.20170209
 7zip.portable 22.1
 adb 33.0.3
-chocolatey 1.1.0
-chocolatey-compatibility.extension 1.0.0
-chocolatey-core.extension 1.4.0
-chocolatey-dotnetfx.extension 1.0.1
-chocolatey-font-helpers.extension 0.0.4
-chocolatey-misc-helpers.extension 0.0.4
-chocolatey-windowsupdate.extension 1.0.4
-dotnet-6.0-desktopruntime 6.0.9
-dotnet-desktopruntime 6.0.9
-DotNet4.5.2 4.5.2.20140902
-dotnetfx 4.8.0.20220524
 git 2.37.3
 git.install 2.37.3
 google-drive-file-stream 56.0.11.2022
 gradle 7.4.2
-KB2533623 2.0.0
-KB2919355 1.0.20160915
-KB2919442 1.0.20160915
-KB2999226 1.0.20181019
-KB3033929 1.0.5
-KB3035131 1.0.3
-KB3063858 1.0.0
 kubernetes-cli 1.25.4
 maven 3.8.6
 nodejs 18.9.0
 nodejs-lts 16.14.0
-nodejs.install 18.9.0
 obs-studio 28.0.1
-obs-studio.install 28.0.1
 pasteintofile 1.5.0
 powertoys 0.62.1
 scrcpy 1.24
 stretchly 1.11.0
 Sudo 1.1.2
-vcredist140 14.32.31332
-vcredist2015 14.0.24215.20170201
-vcredist2017 14.16.27033
 virtualbox 6.1.38
 vlc 3.0.17.4
 vlc.install 3.0.17.4
@@ -230,128 +207,8 @@ ScreenToGif                            NickeManarin.ScreenToGif               2.
 
 | Name                            | Version          | Source                           | ProviderName  |
 |---------------------------------|------------------|----------------------------------|---------------|
-| hp - Printer - 4/16/2019 12...  |                  |                                  | msu           |
-| Windows Subsystem for Linux...  |                  |                                  | msu           |
-| Texas Instruments - Extensi...  |                  |                                  | msu           |
-| Security Intelligence Updat...  |                  |                                  | msu           |
-| Realtek Semiconductor Corp....  |                  |                                  | msu           |
-| Realtek Semiconductor Corp....  |                  |                                  | msu           |
-| Realtek - Net - 10.50.211.2022  |                  |                                  | msu           |
-| Logitech - HIDClass - 1.10....  |                  |                                  | msu           |
-| Logitech - HIDClass - 1.10....  |                  |                                  | msu           |
-| Logitech - HIDClass - 1.10....  |                  |                                  | msu           |
-| Fortemedia - SoftwareCompon...  |                  |                                  | msu           |
-| Fortemedia - Extension - 9....  |                  |                                  | msu           |
-| Fortemedia - Extension - 1....  |                  |                                  | msu           |
-| Elevoc Technology Co.,Ltd -...  |                  |                                  | msu           |
-| Dolby - Extension - 5.1007....  |                  |                                  | msu           |
-| Dell Inc. - Monitor - 3/27/...  |                  |                                  | msu           |
-| Apple, Inc. - USBDevice - 4...  |                  |                                  | msu           |
-| 9WZDNCRFHWD2-Microsoft.Micr...  |                  |                                  | msu           |
-| 9PLK42WD0RC0-Microsoft.Phot...  |                  |                                  | msu           |
-| 2022-08 Préversion de la mi...  |                  |                                  | msu           |
-| 2021-09 Préversion de la mi...  |                  |                                  | msu           |
-| vs_minshellmsires               | 16.10.31303      |                                  | msi           |
-| vs_minshellmsi                  | 16.11.31503      |                                  | msi           |
-| vs_filehandler_x86              | 16.11.31503      |                                  | msi           |
-| vs_filehandler_amd64            | 16.11.31503      |                                  | msi           |
-| vs_FileTracker_Singleton        | 16.10.31303      |                                  | msi           |
-| vcpp_crt.redist.clickonce       | 14.29.30139      |                                  | msi           |
-| Windows Team Extension SDK ...  | 10.1.19041.685   |                                  | msi           |
-| Windows Team Extension SDK      | 10.1.19041.685   |                                  | msi           |
-| Windows Swift SDK for x86_64    | 0.0.0.0          |                                  | msi           |
-| Windows Swift Runtime for x...  | 0.0.0.0          |                                  | msi           |
-| Windows Subsystem for Linux...  | 5.10.60.1        |                                  | msi           |
-| Windows Mobile Extension SDK    | 10.1.19041.685   |                                  | msi           |
-| Windows Mobile Extension SD...  | 10.1.19041.685   |                                  | msi           |
-| Windows IoT Extension SDK C...  | 10.1.19041.685   |                                  | msi           |
-| Windows IoT Extension SDK       | 10.1.19041.685   |                                  | msi           |
-| Windows Desktop Extension SDK   | 10.1.19041.685   |                                  | msi           |
-| Windows Desktop Extension S...  | 10.1.19041.685   |                                  | msi           |
-| Windows App Certification K...  | 10.1.19041.685   |                                  | msi           |
-| Windows App Certification K...  | 10.1.19041.685   |                                  | msi           |
-| Windows App Certification K...  | 10.1.19041.685   |                                  | msi           |
-| WinAppDeploy                    | 10.1.19041.685   |                                  | msi           |
-| Universal General MIDI DLS ...  | 10.1.19041.685   |                                  | msi           |
-| Universal CRT Tools x86         | 10.1.19041.685   |                                  | msi           |
-| Universal CRT Tools x64         | 10.1.19041.685   |                                  | msi           |
-| Universal CRT Redistributable   | 10.1.19041.685   |                                  | msi           |
-| Universal CRT Headers Libra...  | 10.1.19041.685   |                                  | msi           |
-| Universal CRT Extension SDK     | 10.1.19041.685   |                                  | msi           |
-| Toolchain                       | 0.0.0.0          |                                  | msi           |
-| Teams Machine-Wide Installer    | 1.4.0.19572      |                                  | msi           |
-| ScreenToGif                     | 2.37.1           |                                  | msi           |
-| SDK ARM Redistributables        | 10.1.19041.685   |                                  | msi           |
-| SDK ARM Additions               | 10.1.19041.685   |                                  | msi           |
-| Python 3.11.0a5 pip Bootstr...  | 3.11.105.0       |                                  | msi           |
-| Python 3.11.0a5 Utility Scr...  | 3.11.105.0       |                                  | msi           |
-| Python 3.11.0a5 Test Suite ...  | 3.11.105.0       |                                  | msi           |
-| Python 3.11.0a5 Tcl/Tk Supp...  | 3.11.105.0       |                                  | msi           |
-| Python 3.11.0a5 Standard Li...  | 3.11.105.0       |                                  | msi           |
-| Python 3.11.0a5 Executables...  | 3.11.105.0       |                                  | msi           |
-| Python 3.11.0a5 Documentati...  | 3.11.105.0       |                                  | msi           |
-| Python 3.11.0a5 Development...  | 3.11.105.0       |                                  | msi           |
-| Python 3.11.0a5 Core Interp...  | 3.11.105.0       |                                  | msi           |
-| Python 3.11.0a5 Add to Path...  | 3.11.105.0       |                                  | msi           |
 | Oracle VM VirtualBox 6.1.38     | 6.1.38           |                                  | msi           |
-| Node.js                         | 18.9.0           |                                  | msi           |
-| MSI Development Tools           | 10.1.19041.685   |                                  | msi           |
-| Kits Configuration Installer    | 10.1.19041.685   |                                  | msi           |
-| Java Auto Updater               | 2.8.351.10       |                                  | msi           |
-| ICU                             | 67.1             |                                  | msi           |
-| Developer Tools                 | 0.0.0.0          |                                  | msi           |
-| Contrôle d’intégrité du PC ... | 3.2.2110.14001   |                                  | msi           |
-| Application Verifier x64 Ex...  | 10.1.19041.685   |                                  | msi           |
-| Bonjour                         | 3.0.0.10         | C:\Program Files (x86)\Bonjour\  | msi           |
-| Cisco AnyConnect Secure Mob...  | 4.10.4065        | C:\Program Files (x86)\Cisco\... | msi           |
-| Assistant de téléchargement     | 6.71.0           | C:\Program Files (x86)\Druide... | msi           |
-| Java 8 Update 351               | 8.0.3510.10      | C:\Program Files (x86)\Java\j... | msi           |
-| Antidote 11 - Module français   | 11.2.347         | C:\Program Files\Druide\Antid... | msi           |
-| Antidote 11 - English module    | 11.2.347         | C:\Program Files\Druide\Antid... | msi           |
 | Antidote 11                     | 11.2.347         | C:\Program Files\Druide\Antid... | msi           |
-| Antidote - Connectix 11         | 11.2.347         | C:\Program Files\Druide\Conne... | msi           |
-| NordVPN network TUN             | 1.0.1            | C:\Program Files\NordVPN netw... | msi           |
-| PowerToys (Preview)             | 0.64.0           | C:\Program Files\PowerToys\      | msi           |
-| TI-Nspire CX Premium Teache...  | 5.3.2.129        | C:\Program Files\TI Education\   | msi           |
-| Pandoc 2.19.2                   | 2.19.2           | C:\Users\Kevin\AppData\Local\... | msi           |
-| µTorrent                        | 3.5.5.46200      |                                  | Programs      |
-| Zoom                            | 5.12.3 (9638)    |                                  | Programs      |
-| Windows Software Developmen...  | 10.1.19041.685   |                                  | Programs      |
-| WinRAR 6.02 (32-bit)            | 6.02.0           |                                  | Programs      |
-| Visual Studio Community 2019    | 16.11.13         |                                  | Programs      |
-| VLC media player                | 3.0.17.4         |                                  | Programs      |
-| TasksBoard                      | 1.0              |                                  | Programs      |
-| Stretchly 1.11.0                | 1.11.0           |                                  | Programs      |
-| QEMU                            | 6.2.94           |                                  | Programs      |
-| PowerToys (Preview) x64         | 0.64.0           |                                  | Programs      |
-| Popcorn Time                    | 6.2.1.17         |                                  | Programs      |
-| Oh My Posh version 11.0.1       | 11.0.1           |                                  | Programs      |
-| OBS Studio                      | 28.0.1           |                                  | Programs      |
-| Miniconda3 py39_4.12.0 (Pyt...  | py39_4.12.0      |                                  | Programs      |
-| Microsoft Teams                 | 1.5.00.21668     |                                  | Programs      |
-| Microsoft Project - en-us       | 16.0.15726.20174 |                                  | Programs      |
-| Microsoft OneDrive              | 22.225.1026.0001 |                                  | Programs      |
-| Microsoft Edge WebView2 Run...  | 107.0.1418.42    |                                  | Programs      |
-| Microsoft Edge Update           | 1.3.171.37       |                                  | Programs      |
-| Microsoft Edge                  | 107.0.1418.42    |                                  | Programs      |
-| Microsoft 365 Apps for ente...  | 16.0.15726.20174 |                                  | Programs      |
-| Microsoft 365 Apps for ente...  | 16.0.15726.20174 |                                  | Programs      |
-| LogiOptionsPlusExcelAddin       | 1.26.5989.0      |                                  | Programs      |
-| Logi Options+                   | 1.26.5989        |                                  | Programs      |
-| League of Legends               |                  |                                  | Programs      |
-| IntelliJ IDEA Community Edi...  | 213.6461.79      |                                  | Programs      |
-| IObit Uninstaller 12            | 12.1.0.5         |                                  | Programs      |
-| Google Chrome                   | 106.0.5249.119   |                                  | Programs      |
-| Google Drive                    | 65.0.2.0         |                                  | Programs      |
-| Google Calendar                 | 1.0              |                                  | Programs      |
-| Git                             | 2.37.3           |                                  | Programs      |
-| Docker Desktop                  | 4.13.0           |                                  | Programs      |
-| Discord                         | 1.0.9007         |                                  | Programs      |
-| Cisco AnyConnect Secure Mob...  | 4.10.04065       |                                  | Programs      |
-| posh-git                        | 1.1.0            | https://www.powershellgallery... | PowerShellGet |
-| Terminal-Icons                  | 0.10.0           | https://www.powershellgallery... | PowerShellGet |
-| PackageManagement               | 1.4.7            | https://www.powershellgallery... | PowerShellGet |
-| PSReadLine                      | 2.2.6            | https://www.powershellgallery... | PowerShellGet |
 
 ** 🔹  Get-AppxPackage -AllUsers | Select Name, PackageFullName, InstallLocation | Format-Table -AutoSize**
 Name                                         PackageFullName                                                                         InstallLocation
