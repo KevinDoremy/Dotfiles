@@ -42,8 +42,15 @@ winget import wingetAllPackage.json
 Get-AppxPackage -AllUsers | Select Name, PackageFullName, InstallLocation | Format-Table -AutoSize
 ```
 ```powershell
-Get-Packag
+Get-Package
 ```
+If doesnt work 
+```powershell
+Import-Module posh-git
+Import-Module oh-my-posh
+Import-Module PSReadLine
+```
+
 
 
 **Manage application with choco**
