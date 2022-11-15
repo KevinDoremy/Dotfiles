@@ -758,3 +758,12 @@ if (No-Module PSReadLine) {
         Install-Module -Name PSReadLine -Scope AllUsers -Force -SkipPublisherCheck
     }
 }
+
+if (No-Module Terminal-Icons) {
+    if ($PSVersionTable.PSVersion.Major -ge 6.0) {
+        Install-Module -Name Terminal-Icons -AllowPrerelease -Scope AllUsers -Force -SkipPublisherCheck
+    }
+    else {
+        Install-Module -Name Terminal-Icons -Scope AllUsers -Force -SkipPublisherCheck
+    }
+}
