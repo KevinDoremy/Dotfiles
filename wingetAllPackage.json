@@ -6,20 +6,9 @@
 		{
 			"Packages" : 
 			[
-				{
-					"PackageIdentifier" : "Microsoft.VisualStudio.2019.Community"
-				},
-				{
-					"PackageIdentifier" : "Stretchly.Stretchly"
-				},
+				
 				{
 					"PackageIdentifier" : "Canonical.Ubuntu"
-				},
-				{
-					"PackageIdentifier" : "Discord.Discord"
-				},
-				{
-					"PackageIdentifier" : "Docker.DockerDesktop"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.Edge"
@@ -61,9 +50,6 @@
 					"PackageIdentifier" : "RARLab.WinRAR"
 				},
 				{
-					"PackageIdentifier" : "Zoom.Zoom"
-				},
-				{
 					"PackageIdentifier" : "Microsoft.VCRedist.2013.x64"
 				},
 				{
@@ -79,12 +65,6 @@
 					"PackageIdentifier" : "TexasInstruments.TI-Nspire.CXPremiumTeacher"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2015+.x64"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2015+.x86"
-				},
-				{
 					"PackageIdentifier" : "Oracle.VirtualBox"
 				},
 				{
@@ -95,15 +75,6 @@
 				},
 				{
 					"PackageIdentifier" : "Microsoft.PowerToys"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.DotNet.DesktopRuntime.3_1"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.Teams"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VisualStudioCode"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.DotNet.DesktopRuntime.3_1"
