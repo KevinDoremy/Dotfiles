@@ -57,8 +57,8 @@ Import-Module PSReadLine
 
 
 TODO: Faire l'ajout de Z.lua
-TODO: Faire l'ajout de oh-my-posh avec Chocolatey
-TODO: Faire un Simlink des fichiers de configuration pour oh my posh
+* [X] ~~*TODO: Faire l'ajout de oh-my-posh avec Chocolatey*~~ [2022-11-17]
+* TODO: Faire un Simlink des fichiers de configuration pour oh my posh
 
 **Manage application with choco**
 choco install utorrent
@@ -73,8 +73,7 @@ choco install onedrive
 choco install microsoft-teams.install
 choco install vscode
 choco install miniconda3
-choco install oh-my-posh
-choco install qemu
+* [X] ~~*choco install oh-my-posh*~~ [2022-11-17]
 choco install popcorntime
 choco install screentogif
 choco install wsl
