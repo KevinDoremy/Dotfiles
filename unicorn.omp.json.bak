@@ -1,0 +1,116 @@
+{
+    "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+    "blocks": [
+        {
+            "alignment": "left",
+            "segments": [
+                {
+                    "background": "#FFDE57",
+                    "foreground": "#111111",
+                    "powerline_symbol": "",
+                    "properties": {
+                        "display_mode": "environment",
+                        "fetch_virtual_env": true,
+                        "home_enabled": true
+                    },
+                    "style": "powerline",
+                    "template": "  {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
+                    "type": "python"
+                },
+                {
+                    "background": "#003543",
+                    "foreground": "#fff",
+                    "powerline_symbol": "",
+                    "properties": {
+                        "postfix": " ",
+                        "prefix": " ",
+                        "windows": ""
+                    },
+                    "style": "powerline",
+                    "type": "os"
+                },
+                {
+                    "background": "#0087D8",
+                    "foreground": "#003544",
+                    "powerline_symbol": "",
+                    "properties": {
+                        "folder_separator_icon": "/",
+                        "prefix": "  ",
+                        "style": "full"
+                    },
+                    "style": "powerline",
+                    "type": "path"
+                },
+                {
+                    "background": "#d2ff5e",
+                    "foreground": "#193549",
+                    "powerline_symbol": "",
+                    "properties": {
+                        "ahead_and_behind_color": "#f26d50",
+                        "ahead_color": "#89d1dc",
+                        "behind_color": "#f17c37",
+                        "display_stash_count": true,
+                        "display_status": true,
+                        "display_upstream_icon": true,
+                        "local_changes_color": "#ff9248",
+                        "stash_count_icon": " ",
+                        "status_colors_enabled": true
+                    },
+                    "style": "powerline",
+                    "type": "git"
+                },
+                {
+                    "background": "#003543",
+                    "foreground": "#fff",
+                    "powerline_symbol": "",
+                    "properties": {
+                        "prefix": "<#fff>  </>"
+                    },
+                    "style": "powerline",
+                    "type": "time"
+                },
+                {
+                    "background": "#83769c",
+                    "foreground": "#ffffff",
+                    "leading_diamond": "",
+                    "properties": {
+                        "always_enabled": true,
+                        "prefix": "<transparent></> 羽"
+                    },
+                    "style": "plain",
+                    "trailing_diamond": "",
+                    "type": "executiontime"
+                }
+            ],
+            "type": "prompt"
+        },
+        {
+            "alignment": "left",
+            "newline": true,
+            "segments": [
+                {
+                    "foreground": "#fff",
+                    "properties": {
+                        "root_icon": "⚡"
+                    },
+                    "style": "plain",
+                    "type": "root"
+                },
+                {
+                    "foreground": "#f1184c",
+                    "properties": {
+                        "prefix": "",
+                        "text": "🔹"
+                    },
+                    "style": "plain",
+                    "type": "text"
+                }
+            ],
+            "type": "prompt"
+        }
+    ],
+    "console_title": true,
+    "console_title_style": "template",
+    "console_title_template": "{{.User}}@{{.Host}} in {{ .Path }}",
+    "final_space": true
+}
