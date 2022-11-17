@@ -56,6 +56,9 @@ Import-Module PSReadLine
 ```
 
 
+TODO: Faire l'ajout de Z.lua
+TODO: Faire l'ajout de oh-my-posh avec Chocolatey
+TODO: Faire un Simlink des fichiers de configuration pour oh my posh
 
 **Manage application with choco**
 choco install utorrent
