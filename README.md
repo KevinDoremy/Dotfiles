@@ -70,7 +70,6 @@ choco install googlechrome
 choco install logitech-options
 choco install office365business
 choco install onedrive
-choco install microsoft-teams.install
 choco install vscode
 choco install miniconda3
 * [X] ~~*choco install oh-my-posh*~~ [2022-11-17]
