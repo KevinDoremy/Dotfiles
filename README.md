@@ -57,27 +57,30 @@ Import-Module PSReadLine
 
 
 TODO: Faire l'ajout de Z.lua
-* [X] ~~*TODO: Faire l'ajout de oh-my-posh avec Chocolatey*~~ [2022-11-17]
-* TODO: Faire un Simlink des fichiers de configuration pour oh my posh
+* [X] ~~* Faire l'ajout de oh-my-posh avec Chocolatey*~~ [2022-11-17]
+TODO: Faire un Simlink des fichiers de 
+TODO:configuration pour oh my posh
 
 **Manage application with choco**
-choco install utorrent
 choco install discord
+choco install popcorntime
+choco install zoom
+choco install screentogif
+
+choco install utorrent
 choco install Docker Desktop
-choco install google-calendar-chrome
-choco install googledrive
 choco install googlechrome
-choco install logitech-options
 choco install office365business
 choco install onedrive
+choco install googledrive
 choco install vscode
-choco install miniconda3
-* [X] ~~*choco install oh-my-posh*~~ [2022-11-17]
-choco install popcorntime
-choco install screentogif
 choco install wsl
 choco install winrar
-choco install zoom
+
+choco install google-calendar-chrome
+choco install logitech-options
+choco install miniconda3
+* [X] ~~*choco install oh-my-posh*~~ [2022-11-17]
 
 **Chocolatey v1.1.0**
 7zip.commandline 16.02.0.20170209
@@ -106,14 +109,10 @@ zoomit 6.01
 **46 packages installed.**
 
 **Get-InstalledModule**
-Version    Name                                Repository           Description
--------    ----                                ----------           -----------
-1.4.2      LSUClient                           PSGallery            Orchestrate driver, BIOS/UEFI and firmware updates for Lenovo computers 👨‍💻
-1.1.0      posh-git                            PSGallery            Provides prompt with Git status summary information and tab completion for Git commands, parameters, remotes and branch names.
+1.1.0      posh-git                            PSGallery            git
 2.2.6      PSReadLine                          PSGallery            Great command line editing in the PowerShell console host
 0.10.0     Terminal-Icons                      PSGallery            PowerShell module to add file icons to terminal based on file extension
-1.4.7      PackageManagement                   PSGallery            PackageManagement (a.k.a. OneGet) is a new way to discover and install software packages from around the web....
-
+1.4.7      PackageManagement                   PSGallery            PackageManagement (a.k.a. OneGet) is a new way to discover and install 
 
 
 
@@ -123,7 +122,6 @@ Visual Studio Community 2019           Microsoft.VisualStudio.2019.Community  16
 Smart Microphone Setting               4505Fortemedia.FMAPOControl_4pejv7q2g… 1.0.38.0
 Trello                                 45273LiamForsyth.PawsforTrello_7pb5dd… 2.13.8.0
 TasksBoard                             4d00adda40e5c6d620611f45b7633652       1.0
-Stretchly 1.11.0                       Stretchly.Stretchly                    1.11.0              1.12.0         winget
 Bluetooth Audio Receiver               55746MarkSmirnov.BluetoothAudioReveic… 1.1.5.0
 Amazon Alexa                           57540AMZNMobileLLC.AmazonAlexa_22t9g3… 3.25.1156.0
 HP Smart                               AD2F1837.HPPrinterControl_v10z8vjag6k… 140.1.307.0
@@ -137,13 +135,6 @@ Dolby Access                           DolbyLaboratories.DolbyAccess_rz1tebt… 
 Dolby Atmos Speaker System             DolbyLaboratories.DolbyAtmosSpeakerSy… 3.20800.804.0
 Dolby Vision                           DolbyLaboratories.DolbyVisionHDR_rz1t… 2.1.5965.0
 LogiOptionsPlusExcelAddin              E851B750DE4EBCD11654EC6A1890DA1BA8051… 1.26.5989.0
-Git                                    Git.Git                                2.37.3              2.38.1         winget
-Google Chrome                          Google.Chrome                          106.0.5249.119      107.0.5304.107 winget
-IObit Uninstaller 12                   IObitUninstall                         12.1.0.5
-IntelliJ IDEA Community Edition 2021.… IntelliJ IDEA Community Edition 2021.… 213.6461.79
-Microsoft Edge                         Microsoft.Edge                         107.0.1418.42                      winget
-Microsoft Edge Update                  Microsoft Edge Update                  1.3.171.37
-Microsoft Edge WebView2 Runtime        Microsoft.EdgeWebView2Runtime          107.0.1418.42                      winget
 Cortana                                Microsoft.549981C3F5F10_8wekyb3d8bbwe  4.2204.13303.0
 AV1 Video Extension                    Microsoft.AV1VideoExtension_8wekyb3d8… 1.1.52074.0
 MSN Météo                              Microsoft.BingWeather_8wekyb3d8bbwe    4.53.43112.0
@@ -226,6 +217,8 @@ Logi Options+                          Logitech.OptionsPlus                   1.
 Node.js                                OpenJS.NodeJS                          18.9.0              19.1.0         winget
 Windows Subsystem for Linux Update     {8BC9BA1B-F6F3-471D-8773-5283F0C52B84} 5.10.60.1
 Assistant de téléchargement            {93154A3C-9BB7-49D7-A571-4EB6373FA602} 6.71.0
+
+
 
 
 **Get-Package**
