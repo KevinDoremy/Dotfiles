@@ -10,40 +10,40 @@ Write-Host 'Shall we play a game? '-NoNewline
 Write-Host -ForegroundColor Green ([System.Char]::ConvertFromUtf32($EmojiIcon2))
 Write-Host ''
 
-# function make-link ($target, $link) { New-Item -Path $link -ItemType SymbolicLink -Value $target }
-# function get-GitCommit { & git commit -m $args }
-# function .. { set-location .. }
-# function ... { set-location ../.. }
-# function .... { set-location ../../.. }
-# function get-code2 { code-insiders $args }
-# function get-GitPush { & git push }
-# function get-GitPull { & git pull }
-# function get-GitAdd { & git add $args }
-# function get-undo { git reset --soft HEAD^ }
-# function get-gitstatus { git status }
-# function get-gitcheckout {git checkout $args }
-# function get-gitcheckoutnewBranch { & git checkout -b $args }
-# function get-gitlog { git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit }
-# function get-codeprofile { code-insiders "C:\Users\Kevin\Documents\WindowsPowerShell\profile.ps1" }
-# function get-notes { code-insiders "C:\Users\Kevin\Desktop\Texte\Notes"}
-# function get-dev { cd "C:\Dev" ; ls}
-# function get-desktop { cd "C:\Users\Kevin\Desktop" ; ls}
-# function get-kevin { cd "C:\Users\Kevin" ; ls}
-# function ccd { param($path) set-location $path  ls }
-# set-alias desktop "Desktop.ps1"
-# Set-Alias -Name profile -Value get-codeprofile
-# Set-Alias -Name note -Value get-notes
-# Set-Alias -Name dev -Value get-dev
-# Set-Alias -Name desktop -Value get-desktop
-# Set-Alias -Name gs -Value get-gitstatus
-# Set-Alias -Name glog -Value get-gitlog
-# Set-Alias -Name gco -Value get-gitcheckout
-# Set-Alias -Name gcob -Value get-gitcheckoutnewBranch
-# New-Alias -Name c -Value Set-GitCommit
-# Set-Alias -Name open -Value start
-# Set-Alias -Name gpush -Value get-GitPush
-# Set-Alias -Name gpull -Value get-GitPull
-# Set-Alias -Name ga -Value get-GitAdd
+function make-link ($target, $link) { New-Item -Path $link -ItemType SymbolicLink -Value $target }
+function get-GitCommit { & git commit -m $args }
+function .. { set-location .. }
+function ... { set-location ../.. }
+function .... { set-location ../../.. }
+function get-code2 { code-insiders $args }
+function get-GitPush { & git push }
+function get-GitPull { & git pull }
+function get-GitAdd { & git add $args }
+function get-undo { git reset --soft HEAD^ }
+function get-gitstatus { git status }
+function get-gitcheckout {git checkout $args }
+function get-gitcheckoutnewBranch { & git checkout -b $args }
+function get-gitlog { git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit }
+function get-codeprofile { code-insiders "C:\Users\Kevin\Documents\WindowsPowerShell\profile.ps1" }
+function get-notes { code-insiders "C:\Users\Kevin\Desktop\Texte\Notes"}
+function get-dev { cd "C:\Dev" ; ls}
+function get-desktop { cd "C:\Users\Kevin\Desktop" ; ls}
+function get-kevin { cd "C:\Users\Kevin" ; ls}
+function ccd { param($path) set-location $path  ls }
+set-alias desktop "Desktop.ps1"
+Set-Alias -Name profile -Value get-codeprofile
+Set-Alias -Name note -Value get-notes
+Set-Alias -Name dev -Value get-dev
+Set-Alias -Name desktop -Value get-desktop
+Set-Alias -Name gs -Value get-gitstatus
+Set-Alias -Name glog -Value get-gitlog
+Set-Alias -Name gco -Value get-gitcheckout
+Set-Alias -Name gcob -Value get-gitcheckoutnewBranch
+New-Alias -Name c -Value Set-GitCommit
+Set-Alias -Name open -Value start
+Set-Alias -Name gpush -Value get-GitPush
+Set-Alias -Name gpull -Value get-GitPull
+Set-Alias -Name ga -Value get-GitAdd
 
 # Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
 # Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
@@ -53,10 +53,7 @@ Set-PSReadLineOption -EditMode Windows
 oh-my-posh --init --shell pwsh --config C:\Users\Kevin\Documents\unicorn.omp.json | Invoke-Expression
 Invoke-Expression (& { (lua C:\Users\Kevin\Documents\z.lua --init powershell) -join "`n" })
 Import-Module -Name Terminal-Icons
-Import-Module PSColors
-# # Import-Module PSScriptAnalyzer
 # Import-Module posh-git
-# Import-Module -Name Terminal-Icons
 # $PSDefaultParameterValues=@{"CmdletName:ParameterName"="-Nologo"}
  
 # if ($host.Name -eq 'ConsoleHost')
