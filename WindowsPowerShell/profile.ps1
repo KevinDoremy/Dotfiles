@@ -1,5 +1,3 @@
-# using namespace System.Management.Automation
-# using namespace System.Management.Automation.Language
 $EmojiIcon = [System.Convert]::toInt32("1F920",16)
 $EmojiIcon2 = [System.Convert]::toInt32("1F3AE",16)
 Write-Host ''
@@ -45,14 +43,19 @@ Set-Alias -Name gpush -Value get-GitPush
 Set-Alias -Name gpull -Value get-GitPull
 Set-Alias -Name ga -Value get-GitAdd
 
-# Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
-# Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -PredictionViewStyle ListView
 Set-PSReadLineOption -EditMode Windows
 oh-my-posh --init --shell pwsh --config C:\Users\Kevin\Documents\unicorn.omp.json | Invoke-Expression
 Invoke-Expression (& { (lua C:\Users\Kevin\Documents\z.lua --init powershell) -join "`n" })
 Import-Module -Name Terminal-Icons
+
+
+# using namespace System.Management.Automation
+# using namespace System.Management.Automation.Language
+# Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
+# Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
+
 # Import-Module posh-git
 # $PSDefaultParameterValues=@{"CmdletName:ParameterName"="-Nologo"}
  
