@@ -1,4 +1,4 @@
-Import-Module PSScriptAnalyzer
+
 using namespace System.Management.Automation
 using namespace System.Management.Automation.Language
 $EmojiIcon = [System.Convert]::toInt32("1F920",16)
@@ -16,7 +16,7 @@ function make-link ($target, $link) {
 
 oh-my-posh --init --shell pwsh --config C:\Users\Kevin\Documents\unicorn.omp.json | Invoke-Expression
 Import-Module -Name Terminal-Icons
-#Import-Module PSColors
+Import-Module PSColors
 Import-Module posh-git
 Import-Module -Name Terminal-Icons
 Invoke-Expression (& { (lua C:\Users\Kevin\Documents\z.lua --init powershell) -join "`n" })
