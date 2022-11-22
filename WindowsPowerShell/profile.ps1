@@ -47,10 +47,10 @@ Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -PredictionViewStyle ListView
 Set-PSReadLineOption -EditMode Windows
 oh-my-posh --init --shell pwsh --config C:\Users\Kevin\Documents\unicorn.omp.json | Invoke-Expression
-Invoke-Expression (& { (lua C:\Users\Kevin\Documents\z.lua --init powershell) -join "`n" })
 Import-Module -Name Terminal-Icons
 
-
+Import-module z 
+# Invoke-Expression (& { (lua C:\Users\Kevin\Documents\z.lua --init powershell) -join "`n" })
 # using namespace System.Management.Automation
 # using namespace System.Management.Automation.Language
 # Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
