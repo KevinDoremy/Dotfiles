@@ -1,5 +1,5 @@
-using namespace System.Management.Automation
-using namespace System.Management.Automation.Language
+# using namespace System.Management.Automation
+# using namespace System.Management.Automation.Language
 $EmojiIcon = [System.Convert]::toInt32("1F920",16)
 $EmojiIcon2 = [System.Convert]::toInt32("1F3AE",16)
 Write-Host ''
