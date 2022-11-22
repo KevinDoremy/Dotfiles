@@ -45,13 +45,11 @@ Write-Host ''
 # Set-Alias -Name gpull -Value get-GitPull
 # Set-Alias -Name ga -Value get-GitAdd
 
-Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
-Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
+# Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
+# Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -PredictionViewStyle ListView
 Set-PSReadLineOption -EditMode Windows
-
-
 oh-my-posh --init --shell pwsh --config C:\Users\Kevin\Documents\unicorn.omp.json | Invoke-Expression
 # Import-Module -Name Terminal-Icons
 # # Import-Module PSColors
