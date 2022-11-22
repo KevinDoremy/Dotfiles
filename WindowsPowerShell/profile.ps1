@@ -25,14 +25,14 @@ if ($host.Name -eq 'ConsoleHost')
 {
     Import-Module PSReadLine
 }
-function Set-GitCommit { & git commit -m $args }
+function get-GitCommit { & git commit -m $args }
 function .. { set-location .. }
 function ... { set-location ../.. }
 function .... { set-location ../../.. }
 function get-code2 { code-insiders $args }
-function Set-GitPush { & git push }
-function Set-GitPull { & git pull }
-function Set-GitAdd { & git add $args }
+function get-GitPush { & git push }
+function get-GitPull { & git pull }
+function get-GitAdd { & git add $args }
 function get-undo { git reset --soft HEAD^ }
 function get-gitstatus { git status }
 function get-gitcheckout {git checkout $args }
