@@ -1,3 +1,4 @@
+Import-Module PSScriptAnalyzer
 using namespace System.Management.Automation
 using namespace System.Management.Automation.Language
 $EmojiIcon = [System.Convert]::toInt32("1F920",16)
@@ -770,13 +771,3 @@ if (No-Module Terminal-Icons) {
     }
 }
 
-$p = 0
-1..100 | ForEach-Object {
-    Write-Progress -Id 1 -Activity 'pwsh' -PercentComplete $_
-    $p += (Measure-Command {
-        pwsh -noprofile -command 1
-    }).TotalMilliseconds 
-}
-Write-Progress -id 1 -Activity 'profile' -Completed
-$p = $p/100
-$p
