@@ -53,7 +53,7 @@ Set-PSReadLineOption -EditMode Windows
 oh-my-posh --init --shell pwsh --config C:\Users\Kevin\Documents\unicorn.omp.json | Invoke-Expression
 Invoke-Expression (& { (lua C:\Users\Kevin\Documents\z.lua --init powershell) -join "`n" })
 Import-Module -Name Terminal-Icons
-# # Import-Module PSColors
+Import-Module PSColors
 # # Import-Module PSScriptAnalyzer
 # Import-Module posh-git
 # Import-Module -Name Terminal-Icons
