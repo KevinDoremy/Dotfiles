@@ -11,3 +11,9 @@
 	directory = *
 	directory = *
 
+[help]
+	autocorrect = 20
+[push]
+	autoSetupRemote = true
+	default = current
+	autoSetupRemote = true

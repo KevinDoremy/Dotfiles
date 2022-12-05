@@ -21,13 +21,15 @@ function get-undo { git reset --soft HEAD^ }
 function get-gitstatus { git status }
 function get-gitcheckout {git checkout $args }
 function get-gitcheckoutnewBranch { & git checkout -b $args }
-function get-gitlog { git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit }
+function get-gitlog { git log -10 --color --graph --no-merges --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --branches }
 function get-codeprofile { code-insiders "C:\Users\Kevin\Documents\WindowsPowerShell\profile.ps1" }
 function get-notes { code-insiders "C:\Users\Kevin\Desktop\Texte\Notes"}
 function get-dev { cd "C:\Dev" ; ls}
 function get-desktop { cd "C:\Users\Kevin\Desktop" ; ls}
 function get-kevin { cd "C:\Users\Kevin" ; ls}
 function ccd { param($path) set-location $path  ls }
+function get-where { Get-Command $args }
+function get-gopen {gh browse}
 set-alias desktop "Desktop.ps1"
 Set-Alias -Name profile -Value get-codeprofile
 Set-Alias -Name note -Value get-notes
@@ -48,6 +50,7 @@ Set-PSReadLineOption -PredictionViewStyle ListView
 Set-PSReadLineOption -EditMode Windows
 Import-Module -Name Terminal-Icons
 oh-my-posh --init --shell pwsh --config C:\Users\Kevin\Documents\unicorn.omp.json | Invoke-Expression
+(& "C:\Users\Kevin\miniconda3\Scripts\conda.exe" "shell.powershell" "hook") | Out-String | Invoke-Expression
 
 # Install-Module -Name z 
 # Invoke-Expression (& { (lua C:\Users\Kevin\Documents\z.lua --init powershell) -join "`n" })
@@ -724,10 +727,9 @@ oh-my-posh --init --shell pwsh --config C:\Users\Kevin\Documents\unicorn.omp.jso
 #     [Microsoft.PowerShell.PSConsoleReadLine]::Insert("dotnet test")
 #     [Microsoft.PowerShell.PSConsoleReadLine]::AcceptLine()
 # }
-#region conda initialize
-# !! Contents within this block are managed by 'conda init' !!
+# region conda initialize !! Contents within this block are managed by 'conda init' !!
 # (& "C:\Users\Kevin\miniconda3\Scripts\conda.exe" "shell.powershell" "hook") | Out-String | Invoke-Expression
-#endregion
+# endregion
 
 # if ($PSVersionTable.PSVersion.Major -lt 5.0) {
 #     exit

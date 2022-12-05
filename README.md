@@ -44,7 +44,7 @@ Get-AppxPackage -AllUsers | Select Name, PackageFullName, InstallLocation | Form
 ```powershell
 Get-Package
 ```
-If doesnt work 
+If doesn't work 
 ```powershell
 Import-Module posh-git
 ```

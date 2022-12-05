@@ -1,0 +1,1 @@
+$env:CONDA_PROMPT_MODIFIER=$null
