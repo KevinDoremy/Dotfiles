@@ -32,5 +32,18 @@ make-link ~/.dotfiles/.gitconfig ~/.gitconfig
 Le script d'installation vous guidera tout au long du processus d'installation. Il créera des liens symboliques pour tous les fichiers de configuration contenus dans le dépôt, en remplaçant tout fichier de configuration existant avec une sauvegarde.
 C'est tout! Maintenant, tous vos outils de développement devraient être configurés avec mes dotfiles.
 
+## Installation des Applications
+Pour installer tous les packages Chocolatey listés dans le fichier chocolatey.config avec une seule commande, suivez ces étapes :
+
+1. Assurez-vous d'avoir cloné le dépôt Dotfiles et que le fichier chocolatey.config se trouve dans le répertoire .dotfiles.
+2. Ouvrez PowerShell en tant qu'administrateur.
+3. Accédez au répertoire .dotfiles en exécutant la commande suivante :
+```powershell
+cd $HOME/.dotfiles
+```
+4. Exécutez la commande suivante pour installer tous les packages listés dans le fichier chocolatey.config 
+```powershell
+choco install chocolatey.config -y
+```
 ## Conclusion
 J'espère que vous trouverez mes dotfiles utiles dans votre propre travail de développement. Si vous avez des commentaires ou des suggestions, n'hésitez pas à me contacter
