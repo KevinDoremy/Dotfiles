@@ -45,5 +45,14 @@ cd $HOME/.dotfiles
 ```powershell
 choco install chocolatey.config -y
 ```
+## Bar de tâches
+Si vous souhaitez personnaliser les icônes qui sont affichées ou cachées dans la barre des tâches, suivez ces étapes :
+
+1. Faites un clic droit sur un espace vide de la barre des tâches, puis sélectionnez "Paramètres de la barre des tâches"
+2. Faites défiler vers le bas jusqu'à la section "Sélectionner les icônes à afficher dans la barre des tâches" ou "Zone de notification".
+3. Ici, vous verrez une liste d'icônes avec des boutons bascules. Activez ou désactivez les icônes que vous souhaitez afficher ou cacher dans la barre des tâches.
+4. Une fois que vous avez effectué vos modifications, fermez les paramètres, et les icônes de la barre des tâches seront mises à jour en conséquence.
+1. Retire cortana, la bar de recherche, l'affichage Ink, Applications active 
+
 ## Conclusion
 J'espère que vous trouverez mes dotfiles utiles dans votre propre travail de développement. Si vous avez des commentaires ou des suggestions, n'hésitez pas à me contacter
