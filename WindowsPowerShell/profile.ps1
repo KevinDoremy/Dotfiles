@@ -49,7 +49,7 @@ Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -PredictionViewStyle ListView
 Set-PSReadLineOption -EditMode Windows
 Import-Module -Name Terminal-Icons
-oh-my-posh --init --shell pwsh --config C:\Users\Kevin\Documents\unicorn.omp.json | Invoke-Expression
+oh-my-posh --init --shell pwsh --config unicorn.omp.json | Invoke-Expression
 (& "C:\Users\Kevin\miniconda3\Scripts\conda.exe" "shell.powershell" "hook") | Out-String | Invoke-Expression
 
 # Install-Module -Name z 
@@ -61,7 +61,6 @@ oh-my-posh --init --shell pwsh --config C:\Users\Kevin\Documents\unicorn.omp.jso
 
 # Import-Module posh-git
 # $PSDefaultParameterValues=@{"CmdletName:ParameterName"="-Nologo"}
- 
 # if ($host.Name -eq 'ConsoleHost')
 # {
 #     Import-Module PSReadLine

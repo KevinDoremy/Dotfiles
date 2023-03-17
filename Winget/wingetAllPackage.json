@@ -10,9 +10,6 @@
 					"PackageIdentifier" : "Canonical.Ubuntu"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.WindowsTerminal.Preview"
-				},
-				{
 					"PackageIdentifier" : "TexasInstruments.TI-Nspire.CXPremiumTeacher"
 				}
 			],
