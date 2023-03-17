@@ -42,11 +42,8 @@ function make-link ($target, $link) {
 }
 ```
 Pour modifier la stratégie d'exécution des scripts, suivez ces étapes :
-
 Ouvrez PowerShell en tant qu'administrateur. Pour ce faire, recherchez "PowerShell" dans la barre de recherche Windows, faites un clic droit sur "Windows PowerShell" et sélectionnez "Exécuter en tant qu'administrateur".
 Pour vérifier la stratégie d'exécution actuelle, exécutez la commande suivante :
-
-
 ```powershell
 Get-ExecutionPolicy
 ```
@@ -68,13 +65,8 @@ Install-Module oh-my-posh -Scope CurrentUser
 ```powershell
 Start-Process -FilePath "wt.exe"; exit
 ```
-
-
 Confirmez l'action en tapant "O" ou "Oui" lorsque vous êtes invité à le faire.
 Fermez la session PowerShell en cours et rouvrez une nouvelle session pour que les modifications prennent effet.
-
-
-
 ```powershell
 make-link ~/.dotfiles/.gitconfig ~/.gitconfig
 ```
@@ -84,14 +76,10 @@ make-link ~/.dotfiles/WindowsPowerShell ~/Documents/WindowsPowerShell
 ```powershell
 make-link ~/.dotfiles/Terminal/settings.json ~/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json
 ```
-
-
 Le script d'installation vous guidera tout au long du processus d'installation. Il créera des liens symboliques pour tous les fichiers de configuration contenus dans le dépôt, en remplaçant tout fichier de configuration existant avec une sauvegarde.
 C'est tout! Maintenant, tous vos outils de développement devraient être configurés avec mes dotfiles.
-
 ## Installation des Applications
 Pour installer tous les packages Chocolatey listés dans le fichier chocolatey.config avec une seule commande, suivez ces étapes :
-
 1. Assurez-vous d'avoir cloné le dépôt Dotfiles et que le fichier chocolatey.config se trouve dans le répertoire .dotfiles.
 2. Ouvrez PowerShell en tant qu'administrateur.
 3. Accédez au répertoire .dotfiles en exécutant la commande suivante :
@@ -102,31 +90,22 @@ cd $HOME/.dotfiles
 ```powershell
 choco install chocolatey.config -y
 ```
-
 ## Add font to the CascadiaCode
 ```powershell
 Install-FontsFromFolder -fontsFolder "C:\Users\Kevin\.dotfiles\CascadiaCode"
 ```
-
-
 ## Working folder 
 ```powershell
 mkdir C:\Dev
 ```
-
 ## Bar de tâches
 Si vous souhaitez personnaliser les icônes qui sont affichées ou cachées dans la barre des tâches, suivez ces étapes :
-
 1. Faites un clic droit sur un espace vide de la barre des tâches, puis sélectionnez "Paramètres de la barre des tâches"
 2. Faites défiler vers le bas jusqu'à la section "Sélectionner les icônes à afficher dans la barre des tâches" ou "Zone de notification".
 3. Ici, vous verrez une liste d'icônes avec des boutons bascules. Activez ou désactivez les icônes que vous souhaitez afficher ou cacher dans la barre des tâches.
 4. Une fois que vous avez effectué vos modifications, fermez les paramètres, et les icônes de la barre des tâches seront mises à jour en conséquence.
 1. Retire cortana, la bar de recherche, l'affichage Ink, Applications active 
-
 ## Change to windows color
-
 Go to the windows setting and type dark mode
-
-
 ## Conclusion
 J'espère que vous trouverez mes dotfiles utiles dans votre propre travail de développement. Si vous avez des commentaires ou des suggestions, n'hésitez pas à me contacter

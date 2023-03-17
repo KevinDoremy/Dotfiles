@@ -342,35 +342,3 @@ Assistant de téléchargement            {93154A3C-9BB7-49D7-A571-4EB6373FA602} 
 | Windows.CBSPreview                           | Windows.CBSPreview_10.0.19041.1023_neutral_neutral_cw5n1h2txyewy                        | C:\Windows\SystemApps\Windows.CBSPreview_cw5n1h2txyewy                                                   |
 | Windows.CBSPreview                           | Windows.CBSPreview_10.0.19041.423_neutral_neutral_cw5n1h2txyewy                         | C:\Windows\SystemApps\Windows.CBSPreview_cw5n1h2txyewy                                                   |
 | Windows.PrintDialog                          | Windows.PrintDialog_6.2.1.0_neutral_neutral_cw5n1h2txyewy                               | C:\Windows\PrintDialog                                                                                   |
-
-### Documentation   
-
-**Symbo|liclink Comma|nd l|ine**   
-
-```powershell   
-sudo cmd /c |mklink /d where\yo u\want\the\simlink real|\File\origin
-``` 
-**Symboliclink Powershell**     
-
-```powershell 
-New-Item -ItemType SymbolicLink -Path "where\you\want\the\simlink" -Target "real\File\origin"
-```
-```powershell 
-New-Item -ItemType HardLink -Path "where\you\want\the\simlink" -Target "real\File\origin"
-```
-```powershell 
-New-Item -ItemType Junction -Path "where\you\want\the\simlink" -Target "real\File\origin"
-```
-
-
-**Symboliclink Powershell function**  
-
-Need toadd line in profile first 
-```powershell
-make-link C:\Users\Kevin\.dotfiles\.gitconfig C:\Users\Kevin\.gitconfig
-```
-```powershell 
-function make-link ($target, $link) {
-    New-Item -Path $link -ItemType SymbolicLink -Value $target
-}
-```
