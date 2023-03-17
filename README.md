@@ -84,9 +84,7 @@ make-link ~/.dotfiles/WindowsPowerShell ~/Documents/WindowsPowerShell
 ```powershell
 make-link ~/.dotfiles/Terminal/settings.json ~/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json
 ```
-```powershell
-Install-FontsFromFolder -fontsFolder "C:\Users\Kevin\.dotfiles\CascadiaCode"
-```
+
 
 Le script d'installation vous guidera tout au long du processus d'installation. Il créera des liens symboliques pour tous les fichiers de configuration contenus dans le dépôt, en remplaçant tout fichier de configuration existant avec une sauvegarde.
 C'est tout! Maintenant, tous vos outils de développement devraient être configurés avec mes dotfiles.
@@ -105,12 +103,10 @@ cd $HOME/.dotfiles
 choco install chocolatey.config -y
 ```
 
-## Set the Windows Terminals
+## Add font to the CascadiaCode
 ```powershell
-
-
+Install-FontsFromFolder -fontsFolder "C:\Users\Kevin\.dotfiles\CascadiaCode"
 ```
-
 
 
 ## Working folder 
