@@ -8,7 +8,6 @@ Write-Host 'Shall we play a game? '-NoNewline
 Write-Host -ForegroundColor Green ([System.Char]::ConvertFromUtf32($EmojiIcon2))
 Write-Host ''
 
-function make-link ($target, $link) { New-Item -Path $link -ItemType SymbolicLink -Value $target }
 function get-GitCommit { & git commit -m $args }
 function .. { set-location .. }
 function ... { set-location ../.. }
@@ -26,6 +25,21 @@ function get-codeprofile { code-insiders "C:\Users\Kevin\Documents\WindowsPowerS
 function get-notes { code-insiders "C:\Users\Kevin\Desktop\Texte\Notes"}
 function get-dev { cd "C:\Dev" ; ls}
 function get-dotfile { cd "~/.dotfiles" ; ls}
+function get-reset{ Start-Process -FilePath "wt.exe"; exit}
+
+function make-link ($target, $link) {
+    if (Test-Path $link) {
+        $userInput = Read-Host -Prompt "L'élément '$link' existe déjà. Voulez-vous le remplacer ? (O/N)"
+        if ($userInput -eq "O" -or $userInput -eq "o") {
+            Remove-Item -Recurse -Force $link
+            New-Item -Path $link -ItemType SymbolicLink -Value $target
+        } else {
+            Write-Host "Action annulée. Le lien symbolique n'a pas été créé."
+        }
+    } else {
+        New-Item -Path $link -ItemType SymbolicLink -Value $target
+    }
+}
 function get-desktop { cd "C:\Users\Kevin\Desktop" ; ls}
 function get-kevin { cd "C:\Users\Kevin" ; ls}
 function ccd { param($path) set-location $path  ls }
@@ -53,6 +67,28 @@ Import-Module -Name Terminal-Icons
 oh-my-posh --init --shell pwsh --config C:\Users\Kevin\Documents\unicorn.omp.json | Invoke-Expression
 (& "C:\tools\miniconda3\Scripts\conda.exe" "shell.powershell" "hook") | Out-String | Invoke-Expression
 
+function Install-FontsFromFolder {
+    param (
+        [Parameter(Mandatory = $true)]
+        [string]$fontsFolder
+    )
+
+    Get-ChildItem -Path $fontsFolder -Filter "*.ttf" | ForEach-Object {
+        $fontPath = $_.FullName
+        $fontName = $_.Name
+        $null = Add-Type -TypeDefinition @"
+using System;
+using System.Runtime.InteropServices;
+
+public class Fonts {
+    [DllImport("gdi32.dll", EntryPoint = "AddFontResource")]
+    public static extern int AddFontResource(string lpszFilename);
+}
+"@
+        [Fonts]::AddFontResource($fontPath)
+        Write-Host "Installed font: $fontName"
+    }
+}
 
 # Install-Module -Name z 
 # Invoke-Expression (& { (lua C:\Users\Kevin\Documents\z.lua --init powershell) -join "`n" })

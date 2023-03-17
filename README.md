@@ -63,6 +63,9 @@ Install-Module -Name PSReadLine -Scope AllUsers -Force -SkipPublisherCheck
 Install-Module -Name PSReadLine -AllowPrerelease -Scope AllUsers -Force -SkipPublisherCheck
 ```
 ```powershell
+Install-Module oh-my-posh -Scope CurrentUser
+```
+```powershell
 Start-Process -FilePath "wt.exe"; exit
 ```
 
