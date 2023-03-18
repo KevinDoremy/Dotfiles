@@ -13,6 +13,8 @@ function .. { set-location .. }
 function ... { set-location ../.. }
 function .... { set-location ../../.. }
 function get-code2 { code-insiders $args }
+function get-insider { code-insiders $args }
+
 function get-GitPush { & git push }
 function get-GitPull { & git pull }
 function get-GitAdd { & git add $args }
@@ -22,9 +24,9 @@ function get-gitcheckout {git checkout $args }
 function get-gitcheckoutnewBranch { & git checkout -b $args }
 function get-gitlog { git log -10 --color --graph --no-merges --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --branches }
 function get-codeprofile { code-insiders "C:\Users\Kevin\Documents\WindowsPowerShell\profile.ps1" }
-function get-notes { code-insiders "C:\Users\Kevin\Desktop\Texte\Notes"}
+function get-notes { code-insiders "C:\dev\My-Notes\notes"}
 function get-dev { cd "C:\Dev" ; ls}
-function get-dotfile { cd "~/.dotfiles" ; ls}
+function get-dotfile { cd "~/.dotfiles" ; ls ; code .}
 function get-reset{ Start-Process -FilePath "wt.exe"; exit}
 
 function make-link ($target, $link) {

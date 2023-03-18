@@ -223,14 +223,14 @@ Assistant de téléchargement            {93154A3C-9BB7-49D7-A571-4EB6373FA602} 
 
 **Get-Package**
 
-| Name                            | Version          | Source                           | ProviderName  |
-|---------------------------------|------------------|----------------------------------|---------------|
-| Oracle VM VirtualBox 6.1.38     | 6.1.38           |                                  | msi           |
-| Antidote 11                     | 11.2.347         | C:\Program Files\Druide\Antid... | msi           |
+| Name                        | Version  | Source                           | ProviderName |
+| --------------------------- | -------- | -------------------------------- | ------------ |
+| Oracle VM VirtualBox 6.1.38 | 6.1.38   |                                  | msi          |
+| Antidote 11                 | 11.2.347 | C:\Program Files\Druide\Antid... | msi          |
 
 ** 🔹  Get-AppxPackage -AllUsers | Select Name, PackageFullName, InstallLocation | Format-Table -AutoSize**
 | Name                                         | PackageFullName                                                                         | InstallLocation                                                                                          |
-|----------------------------------------------|-----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| -------------------------------------------- | --------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
 |                                              |                                                                                         |                                                                                                          |
 | 21676OptimiliaStudios.ReadAloud              | 21676OptimiliaStudios.ReadAloud_2.1.40.0_x64__k42naep6bwmrc                             | C:\Program Files\WindowsApps\21676OptimiliaStudios.ReadAloud_2.1.40.0_x64__k42naep6bwmrc                 |
 | 4505Fortemedia.FMAPOControl                  | 4505Fortemedia.FMAPOControl_1.0.38.0_x64__4pejv7q2gmsnr                                 | C:\Program Files\WindowsApps\4505Fortemedia.FMAPOControl_1.0.38.0_x64__4pejv7q2gmsnr                     |
@@ -342,3 +342,9 @@ Assistant de téléchargement            {93154A3C-9BB7-49D7-A571-4EB6373FA602} 
 | Windows.CBSPreview                           | Windows.CBSPreview_10.0.19041.1023_neutral_neutral_cw5n1h2txyewy                        | C:\Windows\SystemApps\Windows.CBSPreview_cw5n1h2txyewy                                                   |
 | Windows.CBSPreview                           | Windows.CBSPreview_10.0.19041.423_neutral_neutral_cw5n1h2txyewy                         | C:\Windows\SystemApps\Windows.CBSPreview_cw5n1h2txyewy                                                   |
 | Windows.PrintDialog                          | Windows.PrintDialog_6.2.1.0_neutral_neutral_cw5n1h2txyewy                               | C:\Windows\PrintDialog                                                                                   |
+
+
+| Name | Id  |
+| #--# | u-- |
+|      |     |
+|      |     |
