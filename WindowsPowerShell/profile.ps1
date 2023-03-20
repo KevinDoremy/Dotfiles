@@ -99,7 +99,18 @@ Set-Alias gsp Git-Stash-Pop
 function Git-Stash-List { git stash list }
 Set-Alias gsl Git-Stash-List
 
+function gf { git fetch --all }
 
+function gsearch { git rev-list --all | xargs git grep -F }
+function glast { git log -1 HEAD --stat }
+
+function wt { z }
+function wtb { cd (git worktree list --porcelain | grep -E "worktree " | awk '{print $2; exit}') ; exec $SHELL }
+function wtpr { git worktree add ".worktree/$args[0]" "$args[1]" ; cd ".worktree/$args[0]" ; code . ; change }
+function wta { git worktree add -b "$args[1]" ".worktree/$args[0]" ; cd ".worktree/$args[0]" ; code . }
+function wtl { git worktree list }
+function wtd { git worktree remove --force "$args[0]" ; rm -rf "$args[0]" }
+function wtp { git worktree prune }
 
 # function get-GitPush { & git push }
 # function get-GitPull { & git pull }
