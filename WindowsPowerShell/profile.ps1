@@ -14,6 +14,92 @@ function ... { set-location ../.. }
 function .... { set-location ../../.. }
 function get-code2 { code-insiders $args }
 function get-insider { code-insiders $args }
+function Clear-Console { Clear-Host }
+Set-Alias c Clear-Console
+
+function List-Files { Get-ChildItem -Force }
+Set-Alias lss List-Files
+
+function Git-Status { git status }
+Set-Alias gs Git-Status
+
+function Git-Diff { git diff }
+Set-Alias gd Git-Diff
+
+function Git-Diff-Staged { git diff --staged }
+Set-Alias gds Git-Diff-Staged
+
+function Git-Add { Param($file) git add $file }
+Set-Alias ga Git-Add
+
+function Git-Add-All { git add . }
+Set-Alias gall Git-Add-All
+
+function Git-Add-Patch { git add -p . }
+Set-Alias gap Git-Add-Patch
+
+function Git-Push { git push origin --force }
+Set-Alias gp Git-Push
+
+function Git-Pull { git pull }
+Set-Alias gpu Git-Pull
+
+function Git-Checkout { Param($branch) git checkout $branch }
+Set-Alias gco Git-Checkout
+
+function Git-Checkout-Branch { Param($branch) git checkout -B $branch }
+Set-Alias gcob Git-Checkout-Branch
+
+function Git-Checkout-Previous { git checkout - }
+Set-Alias gcop Git-Checkout-Previous
+
+function Git-Commit { Param($message) git commit -m $message }
+Set-Alias gc Git-Commit
+
+function Git-Commit-Amend { Param($message) git commit --amend -m $message }
+Set-Alias gca Git-Commit-Amend
+
+function Git-Commit-Squash { Param($message) git commit --squash -m $message }
+Set-Alias gcs Git-Commit-Squash
+
+function Git-Log {
+    git log -20 --color --graph --no-merges --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --branches
+}
+Set-Alias glog Git-Log
+
+function Git-Reflog { git reflog }
+Set-Alias glogr Git-Reflog
+
+function Git-Shortlog { git shortlog }
+Set-Alias glogs Git-Shortlog
+
+function Git-Undo { git reset --soft HEAD }
+Set-Alias undo Git-Undo
+
+function Git-Change {
+    git reset --soft $(git log -1 --pretty=format:%h origin/master)
+}
+Set-Alias change Git-Change
+
+function Git-Reset-Soft { Param($commit) git reset --soft $commit }
+Set-Alias grs Git-Reset-Soft
+
+function Git-Reset-Hard { Param($commit) git reset --hard $commit }
+Set-Alias grh Git-Reset-Hard
+
+function Git-Unstage { git reset }
+Set-Alias gus Git-Unstage
+
+function Git-Stash { git stash }
+Set-Alias gst Git-Stash
+
+function Git-Stash-Pop { git stash pop }
+Set-Alias gsp Git-Stash-Pop
+
+function Git-Stash-List { git stash list }
+Set-Alias gsl Git-Stash-List
+
+
 
 # function get-GitPush { & git push }
 # function get-GitPull { & git pull }
