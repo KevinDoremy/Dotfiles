@@ -99,6 +99,7 @@ Set-Alias gsp Git-Stash-Pop
 function Git-Stash-List { git stash list }
 Set-Alias gsl Git-Stash-List
 
+
 function gf { git fetch --all }
 
 function gsearch { git rev-list --all | xargs git grep -F }
