@@ -8,21 +8,21 @@ Write-Host 'Shall we play a game? '-NoNewline
 Write-Host -ForegroundColor Green ([System.Char]::ConvertFromUtf32($EmojiIcon2))
 Write-Host ''
 
-function get-GitCommit { & git commit -m $args }
+# function get-GitCommit { & git commit -m $args }
 function .. { set-location .. }
 function ... { set-location ../.. }
 function .... { set-location ../../.. }
 function get-code2 { code-insiders $args }
 function get-insider { code-insiders $args }
 
-function get-GitPush { & git push }
-function get-GitPull { & git pull }
-function get-GitAdd { & git add $args }
-function get-undo { git reset --soft HEAD^ }
-function get-gitstatus { git status }
-function get-gitcheckout {git checkout $args }
-function get-gitcheckoutnewBranch { & git checkout -b $args }
-function get-gitlog { git log -10 --color --graph --no-merges --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --branches }
+# function get-GitPush { & git push }
+# function get-GitPull { & git pull }
+# function get-GitAdd { & git add $args }
+# function get-undo { git reset --soft HEAD^ }
+# function get-gitstatus { git status }
+# function get-gitcheckout {git checkout $args }
+# function get-gitcheckoutnewBranch { & git checkout -b $args }
+# function get-gitlog { git log -10 --color --graph --no-merges --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --branches }
 function get-codeprofile { code-insiders "C:\Users\Kevin\Documents\WindowsPowerShell\profile.ps1" }
 function get-notes { code-insiders "C:\dev\My-Notes\notes"}
 function get-dev { cd "C:\Dev" ; ls}
@@ -52,15 +52,15 @@ Set-Alias -Name profile -Value get-codeprofile
 Set-Alias -Name note -Value get-notes
 Set-Alias -Name dev -Value get-dev
 Set-Alias -Name desktop -Value get-desktop
-Set-Alias -Name gs -Value get-gitstatus
-Set-Alias -Name glog -Value get-gitlog
-Set-Alias -Name gco -Value get-gitcheckout
-Set-Alias -Name gcob -Value get-gitcheckoutnewBranch
-New-Alias -Name c -Value Set-GitCommit
-Set-Alias -Name open -Value start
-Set-Alias -Name gpush -Value get-GitPush
-Set-Alias -Name gpull -Value get-GitPull
-Set-Alias -Name ga -Value get-GitAdd
+# Set-Alias -Name gs -Value get-gitstatus
+# Set-Alias -Name glog -Value get-gitlog
+# Set-Alias -Name gco -Value get-gitcheckout
+# Set-Alias -Name gcob -Value get-gitcheckoutnewBranch
+# New-Alias -Name c -Value Set-GitCommit
+# Set-Alias -Name open -Value start
+# Set-Alias -Name gpush -Value get-GitPush
+# Set-Alias -Name gpull -Value get-GitPull
+# Set-Alias -Name ga -Value get-GitAdd
 
 Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -PredictionViewStyle ListView
@@ -695,17 +695,14 @@ public class Fonts {
 #                          -LongDescription "Set current selection to next command argument in the command line. Use of digit argument selects argument by position" `
 #                          -ScriptBlock {
 #     param($key, $arg)
-  
 #     $ast = $null
 #     $cursor = $null
 #     [Microsoft.PowerShell.PSConsoleReadLine]::GetBufferState([ref]$ast, [ref]$null, [ref]$null, [ref]$cursor)
-  
 #     $asts = $ast.FindAll( {
 #         $args[0] -is [System.Management.Automation.Language.ExpressionAst] -and
 #         $args[0].Parent -is [System.Management.Automation.Language.CommandAst] -and
 #         $args[0].Extent.StartOffset -ne $args[0].Parent.Extent.StartOffset
 #       }, $true)
-  
 #     if ($asts.Count -eq 0) {
 #         [Microsoft.PowerShell.PSConsoleReadLine]::Ding()
 #         return
@@ -737,7 +734,6 @@ public class Fonts {
 #             $startOffsetAdjustment = 1
 #             $endOffsetAdjustment = 2
 #     }
-  
 #     [Microsoft.PowerShell.PSConsoleReadLine]::SetCursorPosition($nextAst.Extent.StartOffset + $startOffsetAdjustment)
 #     [Microsoft.PowerShell.PSConsoleReadLine]::SetMark($null, $null)
 #     [Microsoft.PowerShell.PSConsoleReadLine]::SelectForwardChar($null, ($nextAst.Extent.EndOffset - $nextAst.Extent.StartOffset) - $endOffsetAdjustment)
