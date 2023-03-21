@@ -1,6 +1,10 @@
-^!p::  ; Control+Alt+P
+SetTitleMatchMode, 2 ; Set title matching mode to "contains"
 
-WinGetTitle, currentURL, A  ; Get the active window's title
-StringRight, checkPDF, currentURL, 4  ; Check the last 4 characters of the title
-MsgBox, 64, PDF Detected, The active browser tab contains a PDF file.
+#IfWinActive, Google Chrome ahk_class Chrome_WidgetWin_1
+{
+    ; Key combination for the shortcut
+    ^+s::  ; Ctrl+Shift+S
 
+    MsgBox, 64, Chrome Shortcut, You pressed Ctrl+Shift+S in Google Chrome.
+    return
+}
