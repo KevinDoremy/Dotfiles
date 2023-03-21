@@ -38,8 +38,6 @@ Set-Alias gall Git-Add-All
 function Git-Add-Patch { git add -p . }
 Set-Alias gap Git-Add-Patch
 
-function Git-Push { git push origin --force }
-Set-Alias gp Git-Push
 
 function Git-Pull { git pull }
 Set-Alias gpu Git-Pull
@@ -53,14 +51,9 @@ Set-Alias gcob Git-Checkout-Branch
 function Git-Checkout-Previous { git checkout - }
 Set-Alias gcop Git-Checkout-Previous
 
-function Git-Commit { Param($message) git commit -m $message }
-Set-Alias gc Git-Commit
 
 function Git-Commit-Amend { Param($message) git commit --amend -m $message }
 Set-Alias gca Git-Commit-Amend
-
-function Git-Commit-Squash { Param($message) git commit --squash -m $message }
-Set-Alias gcs Git-Commit-Squash
 
 function Git-Log {
     git log -20 --color --graph --no-merges --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --branches
@@ -102,15 +95,14 @@ Set-Alias gsl Git-Stash-List
 
 function gf { git fetch --all }
 
-function gsearch { git rev-list --all | xargs git grep -F }
+function gsearch { git rev-list --all | %{ git grep -F $_ } }
 function glast { git log -1 HEAD --stat }
 
-function wt { z }
-function wtb { cd (git worktree list --porcelain | grep -E "worktree " | awk '{print $2; exit}') ; exec $SHELL }
-function wtpr { git worktree add ".worktree/$args[0]" "$args[1]" ; cd ".worktree/$args[0]" ; code . ; change }
-function wta { git worktree add -b "$args[1]" ".worktree/$args[0]" ; cd ".worktree/$args[0]" ; code . }
+function wtb { cd ((git worktree list --porcelain | Select-String "worktree " | Select-Object -First 1).ToString().Split(" ")[1]); & $SHELL }
+function wtpr { git worktree add ".worktree/$($args[0])" "$($args[1])"; cd ".worktree/$($args[0])"; code .; change }
+function wta { git worktree add -b "$($args[1])" ".worktree/$($args[0])"; cd ".worktree/$($args[0])"; code . }
 function wtl { git worktree list }
-function wtd { git worktree remove --force "$args[0]" ; rm -rf "$args[0]" }
+function wtd { git worktree remove --force "$($args[0])"; Remove-Item -Recurse -Force "$($args[0])" }
 function wtp { git worktree prune }
 
 # function get-GitPush { & git push }
