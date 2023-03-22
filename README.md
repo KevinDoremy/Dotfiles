@@ -71,6 +71,11 @@ Fermez la session PowerShell en cours et rouvrez une nouvelle session pour que l
 make-link ~/.dotfiles/.gitconfig ~/.gitconfig
 ```
 ```powershell
+make-link ~/.dotfiles/wavenet.ahk ~/AppData/Roaming/Microsoft/Windows/"Start Menu"/Programs/Startup/wavenet.ahk
+```
+```powershell
+```
+```powershell
 make-link ~/.dotfiles/WindowsPowerShell ~/Documents/WindowsPowerShell
 ```
 ```powershell
