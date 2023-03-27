@@ -119,3 +119,8 @@ J'esp√®re que vous trouverez mes dotfiles utiles dans votre propre travail de d√
 ```powershell	
 wsl --install
 ```
+
+
+```powershell
+ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+```
