@@ -124,3 +124,27 @@ wsl --install
 ```powershell
  Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 ```
+
+
+
+1) Run PowerShell as administrator
+2) Paste this command:
+```powershell
+  Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+```
+1) Restart your PC
+2) Run PowerShell as administrator again
+3) Paste these two commands:
+```powershell
+    dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+```
+```powershell
+    dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+```
+1) Restart your PC Again
+2) Download Ubuntu from the Microsoft Store
+1) Then, run powershell as administrator again and paste this command:
+
+```powershell
+  wsl --set-default-version 2
+```
