@@ -74,8 +74,6 @@ make-link ~/.dotfiles/.gitconfig ~/.gitconfig
 make-link ~/.dotfiles/wavenet.ahk "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\wavenet.ahk"
 ```
 ```powershell
-```
-```powershell
 make-link ~/.dotfiles/WindowsPowerShell ~/Documents/WindowsPowerShell
 ```
 ```powershell
