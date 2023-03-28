@@ -182,6 +182,9 @@ public class Fonts {
     }
 }
 
+
+Invoke-Expression (& { (lua /path/to/z.lua --init powershell) -join "`n" })
+
 # Install-Module -Name z 
 # Invoke-Expression (& { (lua C:\Users\Kevin\Documents\z.lua --init powershell) -join "`n" })
 # using namespace System.Management.Automation
