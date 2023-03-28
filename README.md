@@ -140,3 +140,8 @@ J'esp√®re que vous trouverez mes dotfiles utiles dans votre propre travail de d√
     ```powershell
     wsl --set-default-version 2
     ```
+
+
+## Z and Lua 
+
+[System.Environment]::SetEnvironmentVariable('ResourceGroup','AZ_Resource_Group')
