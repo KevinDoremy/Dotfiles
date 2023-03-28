@@ -40,6 +40,12 @@
     {
         "defaults": 
         {
+            "colorScheme": "One Half Dark",
+            "elevate": true,
+            "font": 
+            {
+                "face": "CaskaydiaCove Nerd Font Mono"
+            },
             "intenseTextStyle": "bright",
             "useAcrylic": false
         },
@@ -371,6 +377,7 @@
         }
     ],
     "showTerminalTitleInTitlebar": true,
+    "startOnUserLogin": false,
     "tabWidthMode": "equal",
     "themes": [],
     "windowingBehavior": "useNew"
