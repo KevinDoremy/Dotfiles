@@ -144,4 +144,6 @@ J'esp√®re que vous trouverez mes dotfiles utiles dans votre propre travail de d√
 
 ## Z and Lua 
 
-[System.Environment]::SetEnvironmentVariable('ResourceGroup','AZ_Resource_Group')
+```powershell	
+ setx PATH "$env:path;C:\Users\Kevin\Documents\WindowsPowerShell\Lua" -m
+```
