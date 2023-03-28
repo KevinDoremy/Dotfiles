@@ -116,14 +116,6 @@ Go to the windows setting and type dark mode
 J'espère que vous trouverez mes dotfiles utiles dans votre propre travail de développement. Si vous avez des commentaires ou des suggestions, n'hésitez pas à me contacter
 
 ## WSL 
-```powershell	
-wsl --install
-```
-
-
-```powershell
- Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-```
 
 
 
