@@ -185,8 +185,8 @@ public class Fonts {
 
 Invoke-Expression (& { (lua ~/Documents/WindowsPowerShell/z.lua --init powershell) -join "`n" })
 
-# Install-Module -Name z 
-# Invoke-Expression (& { (lua C:\Users\Kevin\Documents\z.lua --init powershell) -join "`n" })
+# https://github.com/skywind3000/z.lua 
+
 # using namespace System.Management.Automation
 # using namespace System.Management.Automation.Language
 # Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
