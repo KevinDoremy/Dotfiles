@@ -112,12 +112,15 @@ Si vous souhaitez personnaliser les icônes qui sont affichées ou cachées dans
 1. Retire cortana, la bar de recherche, l'affichage Ink, Applications active 
 ## Change to windows color
 Go to the windows setting and type dark mode
-## Conclusion
-J'espère que vous trouverez mes dotfiles utiles dans votre propre travail de développement. Si vous avez des commentaires ou des suggestions, n'hésitez pas à me contacter
+
+
+## Z and Lua 
+
+```powershell	
+ setx PATH "$env:path;C:\Users\Kevin\Documents\WindowsPowerShell\Lua" -m
+```
 
 ## WSL 
-
-
 
 1) Run PowerShell as administrator
 2) Paste this command:
@@ -142,8 +145,7 @@ J'espère que vous trouverez mes dotfiles utiles dans votre propre travail de d�
     ```
 
 
-## Z and Lua 
+## Conclusion
+J'espère que vous trouverez mes dotfiles utiles dans votre propre travail de développement. Si vous avez des commentaires ou des suggestions, n'hésitez pas à me contacter
 
-```powershell	
- setx PATH "$env:path;C:\Users\Kevin\Documents\WindowsPowerShell\Lua" -m
-```
+
