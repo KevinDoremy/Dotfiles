@@ -182,7 +182,7 @@ public class Fonts {
     }
 }
 
-Invoke-Expression (& { (lua ~/Documents/WindowsPowerShell/lua/z.lua --init powershell) -join "`n" })
+Invoke-Expression (& { (lua ~/Documents/WindowsPowerShell/Lua/z.lua --init powershell) -join "`n" })
 
 # https://github.com/skywind3000/z.lua 
 
