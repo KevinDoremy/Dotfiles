@@ -34,6 +34,12 @@ class Board:
             return True
         else:
             return False
+        
+    def check_queen(self, start, end):
+        if self.board[end[0]][end[1]] == 'q':
+            return True
+        else:
+            return False
 
     def check_pawn(self, start, end):
         if self.board[end[0]][end[1]] == 'p':
@@ -53,5 +59,17 @@ class Board:
         else:
             return False
         
-        
+    def check_bishop(self, start, end):
+        if self.board[end[0]][end[1]] == 'b':
+            return True
+        else:
+            return False
+    
+    def check_knight(self, start, end):
+        if self.board[end[0]][end[1]] == 'n':
+            return True
+        else:
+            return False
+            
+    
         
