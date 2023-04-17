@@ -6,7 +6,7 @@ SetTitleMatchMode, 2 ; Set title matching mode to "contains"
     ^+s::  ; Ctrl+Shift+S
 
     ; Open the context menu
-    Click, Right
+    Send, {AppsKey}  ; Alternatively, use Send, +{F10} for Shift + F10
     Sleep, 10  ; Wait for 0.1 second
 
     ; Press 'W'
@@ -26,7 +26,7 @@ SetTitleMatchMode, 2 ; Set title matching mode to "contains"
     ^+x::  ; Ctrl+Shift+x
 
     ; Open the context menu
-    Click, Right
+    Send, {AppsKey}  ; Alternatively, use Send, +{F10} for Shift + F10
     Sleep, 10  ; Wait for 0.1 second
 
     ; Press 'x'
