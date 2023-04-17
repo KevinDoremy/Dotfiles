@@ -17,5 +17,5 @@ SetTitleMatchMode, 2 ; Set title matching mode to "contains"
     Send, {Enter}
     Sleep, 100  ; Wait for 0.1 second
     Send, {Enter}
-    
+    return
 }
