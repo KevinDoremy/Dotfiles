@@ -7,15 +7,15 @@ SetTitleMatchMode, 2 ; Set title matching mode to "contains"
 
     ; Open the context menu
     Click, Right
-    Sleep, 100  ; Wait for 0.1 second
+    Sleep, 10  ; Wait for 0.1 second
 
     ; Press 'W'
     Send, w
-    Sleep, 100  ; Wait for 0.1 second
+    Sleep, 10  ; Wait for 0.1 second
 
     ; Press 'Enter' two times
     Send, {Enter}
-    Sleep, 100  ; Wait for 0.1 second
+    Sleep, 10  ; Wait for 0.1 second
     Send, {Enter}
     return
 }
