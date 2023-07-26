@@ -1,7 +1,5 @@
 [core]
 	pager = cat
-[credential]
-	helper = manager-core
 [user]
 	email = 65405378+KevinDoremy@users.noreply.github.com
 	name = Kevin Doremy
@@ -9,8 +7,6 @@
 	defaultBranch = main
 [safe]
 	directory = *
-	directory = *
-
 [help]
 	autocorrect = 20
 [push]
